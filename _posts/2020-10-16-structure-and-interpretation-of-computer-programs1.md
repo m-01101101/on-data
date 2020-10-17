@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Introductory notes & quotes from the foreward of SICP
+categories: [markdown]
+title: Introducing Structure and Interpretation of Computer Programs
+---
+
 # Structure and interpretation of Computer Programs
 
 As I delved down the rabbit role of writing code, particularly looking to delve more into functional programming, a number of folks I respected and asked for advice mentioned the book `Structure and Interpretation of Computer Programs`. I was also recommended `The Little Schemer` as I was writing some recursive programs. What follows are quotes, musings and examples from those books and various other sources.
