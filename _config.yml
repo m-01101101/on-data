@@ -7,7 +7,8 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: On data
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+description: Random notes and thoughts on the world of data and analytics
+twitter_username: _mrogers
 github_username: m-01101101
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "on-data"
