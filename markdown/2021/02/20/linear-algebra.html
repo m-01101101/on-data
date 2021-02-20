@@ -249,7 +249,7 @@ window.onload = wrap_img;
 
 <p>$r + s = [r_x + s_x, r_y + s_y]$</p>
 
-<p><img src="/on-data/images/linear_algebra/addingvectors.jpg%20%7C%20width=300" alt="">
+<p><img src="/on-data/images/linear_algebra/addingvectors.jpg" alt="" height="300px">
 <br></p>
 
 <p>In the example above $r = \begin{bmatrix} 1 \ 2\end{bmatrix}$, $s = \begin{bmatrix} 3 \ -1\end{bmatrix}$ we can arrive at $t$ geometrically, taking 1 step the right, 2 up, then 3 to the right, and one down.</p>
@@ -262,7 +262,7 @@ window.onload = wrap_img;
 </li>
 </ol>
 
-<p><img src="/on-data/images/linear_algebra/vector_multiplication.jpg%20%7C%20width=250" alt="">
+<p><img src="/on-data/images/linear_algebra/vector_multiplication.jpg" alt="" height="250px">
 <br></p>
 
 <p>We multiple each component in the vector by that scalar.</p>
@@ -286,14 +286,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>A better fit would have as much overlap as it can, reducing the residuals as much as possible.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/residuals.png</td>
-      <td>width=400)</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/residuals.png" alt="" height="400px"></p>
 
 <p>In the example above, we’d improve the model in orange by decreasing or increasing $\mu$ (the height) and keeping $\sigma$ (the width) roughly the same.</p>
 
@@ -312,55 +305,24 @@ They allow us to represent lots of lists of data together.</p>
 </code></pre></div>  </div>
 </blockquote>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/testing_rss.png</td>
-      <td>width=400)</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/testing_rss.png" alt="" height="400px"></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">μ</span> <span class="o">=</span> <span class="mi">179</span> <span class="p">;</span> <span class="n">σ</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">μ</span><span class="p">,</span> <span class="n">σ</span><span class="p">]</span>
 <span class="n">histogram</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </code></pre></div></div>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/testing_rss1.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/testing_rss1.png" alt="" height="400px"><br></p>
 
 <p>Since each parameter vector $\mathbf{p}$ represents a different bell curve, each with its own value for the sum of squared residuals, $\mathrm{SSR}$, we can draw the surface of $\mathrm{SSR}$ values over the space spanned by $\mathbf{p}$, such as $\mu$ and $\sigma$ in this example.</p>
 
 <p>Every point on this surface represents the SSR of a choice of parameters</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/residuals_as_contours.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/residuals_as_contours.png" alt="" height="400px"><br></p>
 
 <p>We can take a ‘top-down’ view of the surface, and view it as a contour map, where each of the contours (in green here) represent a constant value for the $\mathrm{SSR}$.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/residuals_as_contours1.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/residuals_as_contours1.png" alt="" height="400px"><br></p>
 
 <p>Often we can’t see the whole parameter space, so instead of just picking the lowest point, we have to make educated guesses where better points will be.</p>
 
@@ -379,14 +341,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>The $\Delta\mathbf{p}$ $\begin{bmatrix}-2 \ 2\end{bmatrix}$ will give the best improvement in the model below;</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/moving_contours.png</td>
-      <td>width=400)</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/moving_contours.png" alt="" height="400px"></p>
 
 <p>$\mu$ and $\sigma$ have to be different, decrease $\mu$ along the x-axis, increase $\sigma$ along the y-axis.</p>
 
@@ -451,15 +406,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>In the image below $\hat{i}$ and $\hat{j}$ are our <em>basis vectors</em>, things that define the space. Vector addition can be thought of as combining two scaled vectors of $\hat{i}$ and $\hat{j}$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/vector_addition.jpg</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/vector_addition.jpg" alt="" height="400px"><br></p>
 
 <p>Mulitplication on vectors; $2r$ is 2 * the components of $r$</p>
 
@@ -469,15 +416,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>Vector subtraction; minus $r$ is not a shorter vector, that would be 0.5, rather it is in the oppositie direction. (Addition of negative one multiple the vector, ie vector + $(s * -1)$ -&gt; this is a very handy way to think of subtraction)</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/vector_operations.jpg</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/vector_operations.jpg" alt="" height="400px"><br></p>
 
 <p><strong>Thinking of vectors as representing attributes of objects</strong></p>
 
@@ -487,28 +426,13 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>Our vector operations still apply to these house objects, we can do operations on multiple houses, adding and multiplying (and introducing the concept of a negative house if there’s such a thing)</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/vectors_as_attributes.jpg</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/vectors_as_attributes.jpg" alt="" height="400px"><br></p>
 
 <p><strong>Doing operations with vectors</strong></p>
 
 <p>We have the following vectors;</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/doingvectoroperations.jpg</td>
-      <td>width=400)</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/doingvectoroperations.jpg" alt="" height="400px"></p>
 
 <p>$a$ = $\begin{bmatrix}2 \ 2\end{bmatrix}$ 
 $-b$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$ 
@@ -528,27 +452,11 @@ $d$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$</p>
 
 <p>We can define a vector, say $r$, without any reference to any coordinate system. We can treat it as a geometric object, with just two properties, it’s length (size) and its direction.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/vector_r.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/vector_r.png" alt="" height="400px"><br></p>
 
 <p>If we wanted to calculated the size, or the length of $r$, we could use a coordinate system with two axis that are orthogonal to each other.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/i_j_axis.png</td>
-      <td>width=200)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/i_j_axis.png" alt="" height="200px"><br></p>
 
 <p>$r = ai + bj$ -&gt; a number of i, and b number of j</p>
 
@@ -564,15 +472,7 @@ $d$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$</p>
 
 <p>$\lVert r \rVert = \sqrt{a^2 + b^2}$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/denoting_r_2d.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/denoting_r_2d.png" alt="" height="400px"><br></p>
 
 <p><strong>We define the size of a vector through the sums of the squares of its components</strong></p>
 
@@ -620,15 +520,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Say we have two vectors, $r$ and $s$, $r$ has the components $ri$ and $rj$, $s$ has the components $si$ and $sj$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/r_and_s.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/r_and_s.png" alt="" height="400px"><br></p>
 
 <p>We define $r . s$ (the dot product) as multiplying the $i$ components and the $j$ components and then summing them.</p>
 
@@ -636,15 +528,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Another way of saying this is; the dot product of two vectors is the sum of their componentwise products;</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/dotproduct2.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/dotproduct2.png" alt="" height="400px"><br></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">dot</span><span class="p">(</span><span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">w</span><span class="p">:</span> <span class="n">Vector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
     <span class="s">"""Computes v_1 * w_1 + ... + v_n * w_n"""</span>
@@ -657,15 +541,7 @@ assert dot([1, 2, 3], [4, 5, 6]) == 32 # 1 * 4 + 2 * 5 + 3 * 6
 
 <p>It’s the length of the vector you’d get if you projected v onto w.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/dotproduct1.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/dotproduct1.png" alt="" height="400px"><br></p>
 
 <p>The dot product is therefore a scalar number not a vector. However, we get the vector of the dotted line above by multiplying $w$ by the dot product.</p>
 
@@ -723,27 +599,11 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The cosine rule, when combined with the dot product can tell us <strong>the degree to which the two vectors are pointing in the same direction</strong>.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/cosine_rule.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/cosine_rule.png" alt="" height="400px"><br></p>
 
 <p>First, translate out the cosine rule using vector notation;</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/cosine_as_vector.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/cosine_as_vector.png" alt="" height="400px"><br></p>
 
 <p>We know that $\lVert r-s \rVert^2$ is equal to $(r-s).(r-s)$</p>
 
@@ -768,15 +628,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
   <p>dot product of a vector is a scalar quantity describing only the magnitude of a particular vector</p>
 </blockquote>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/dotproduct3.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/dotproduct3.png" alt="" height="400px"><br></p>
 
 <p>If the vectors are 90 degrees from one another</p>
 <ul>
@@ -821,25 +673,9 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>Here, the hypotenuse is the size of $s$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/projection.png</td>
-      <td>width=200)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/projection.png" alt="" height="200px"><br></p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/projection3.png</td>
-      <td>width=200)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/projection3.png" alt="" height="200px"><br></p>
 
 <p>Remember that the scalar projection is the size of the green vector.</p>
 
@@ -857,15 +693,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The dot product gives us the projection multiplied by the size of r $\lVert r \rVert$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/projection2.png</td>
-      <td>width=200)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/projection2.png" alt="" height="200px"><br></p>
 
 <p>We can get the adjacent size by diving the dot product by mod r</p>
 
@@ -929,15 +757,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The “span” of $\hat{e_1}$ and $\hat{e_2}$ is the set of all their linear combinations; $a\hat{e_1} + b\hat{e_2}$</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/r_intermsofe.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/r_intermsofe.png" alt="" height="400px"><br></p>
 
 <p>$r$ exists independently of the basis vectors. It takes us from an origin to another point, but we use the coordinate system to describe $r$.</p>
 
@@ -955,15 +775,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><msub><mi>b</mi><mn>2</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>∗</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>∗</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b_1.b_2 = (2*-2) + (1*4) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
-<table>
-  <tbody>
-    <tr>
-      <td>![](/on-data/images/linear_algebra/axistransformation1.png</td>
-      <td>width=400)<br>
-</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/on-data/images/linear_algebra/axistransformation1.png" alt="" height="400px"><br></p>
 
 <p>You can project $r$ down onto $b_2$ and calculate the vector projection. This will tell you “how much of that axis ($b_2$) you need”. You then do the same for $b_1$</p>
 
