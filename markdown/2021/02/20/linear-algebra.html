@@ -249,7 +249,7 @@ window.onload = wrap_img;
 
 <p>$r + s = [r_x + s_x, r_y + s_y]$</p>
 
-<p><img src="/on-data/images/linear_algebra/addingvectors.jpg" alt="" height="300px">
+<p><img src="/on-data/images/linear_algebra/addingvectors.jpg" alt="" width="300px">
 <br></p>
 
 <p>In the example above $r = \begin{bmatrix} 1 \ 2\end{bmatrix}$, $s = \begin{bmatrix} 3 \ -1\end{bmatrix}$ we can arrive at $t$ geometrically, taking 1 step the right, 2 up, then 3 to the right, and one down.</p>
@@ -262,7 +262,7 @@ window.onload = wrap_img;
 </li>
 </ol>
 
-<p><img src="/on-data/images/linear_algebra/vector_multiplication.jpg" alt="" height="250px">
+<p><img src="/on-data/images/linear_algebra/vector_multiplication.jpg" alt="" width="250px">
 <br></p>
 
 <p>We multiple each component in the vector by that scalar.</p>
@@ -286,7 +286,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>A better fit would have as much overlap as it can, reducing the residuals as much as possible.</p>
 
-<p><img src="/on-data/images/linear_algebra/residuals.png" alt="" height="400px"></p>
+<p><img src="/on-data/images/linear_algebra/residuals.png" alt="" width="400px"></p>
 
 <p>In the example above, we’d improve the model in orange by decreasing or increasing $\mu$ (the height) and keeping $\sigma$ (the width) roughly the same.</p>
 
@@ -305,24 +305,24 @@ They allow us to represent lots of lists of data together.</p>
 </code></pre></div>  </div>
 </blockquote>
 
-<p><img src="/on-data/images/linear_algebra/testing_rss.png" alt="" height="400px"></p>
+<p><img src="/on-data/images/linear_algebra/testing_rss.png" alt="" width="400px"></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">μ</span> <span class="o">=</span> <span class="mi">179</span> <span class="p">;</span> <span class="n">σ</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">μ</span><span class="p">,</span> <span class="n">σ</span><span class="p">]</span>
 <span class="n">histogram</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><img src="/on-data/images/linear_algebra/testing_rss1.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/testing_rss1.png" alt="" width="400px"></p>
 
 <p>Since each parameter vector $\mathbf{p}$ represents a different bell curve, each with its own value for the sum of squared residuals, $\mathrm{SSR}$, we can draw the surface of $\mathrm{SSR}$ values over the space spanned by $\mathbf{p}$, such as $\mu$ and $\sigma$ in this example.</p>
 
 <p>Every point on this surface represents the SSR of a choice of parameters</p>
 
-<p><img src="/on-data/images/linear_algebra/residuals_as_contours.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/residuals_as_contours.png" alt="" width="400px"></p>
 
 <p>We can take a ‘top-down’ view of the surface, and view it as a contour map, where each of the contours (in green here) represent a constant value for the $\mathrm{SSR}$.</p>
 
-<p><img src="/on-data/images/linear_algebra/residuals_as_contours1.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/residuals_as_contours1.png" alt="" width="400px"></p>
 
 <p>Often we can’t see the whole parameter space, so instead of just picking the lowest point, we have to make educated guesses where better points will be.</p>
 
@@ -341,7 +341,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>The $\Delta\mathbf{p}$ $\begin{bmatrix}-2 \ 2\end{bmatrix}$ will give the best improvement in the model below;</p>
 
-<p><img src="/on-data/images/linear_algebra/moving_contours.png" alt="" height="400px"></p>
+<p><img src="/on-data/images/linear_algebra/moving_contours.png" alt="" width="400px"></p>
 
 <p>$\mu$ and $\sigma$ have to be different, decrease $\mu$ along the x-axis, increase $\sigma$ along the y-axis.</p>
 
@@ -406,7 +406,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>In the image below $\hat{i}$ and $\hat{j}$ are our <em>basis vectors</em>, things that define the space. Vector addition can be thought of as combining two scaled vectors of $\hat{i}$ and $\hat{j}$</p>
 
-<p><img src="/on-data/images/linear_algebra/vector_addition.jpg" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/vector_addition.jpg" alt="" width="400px"></p>
 
 <p>Mulitplication on vectors; $2r$ is 2 * the components of $r$</p>
 
@@ -416,7 +416,7 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>Vector subtraction; minus $r$ is not a shorter vector, that would be 0.5, rather it is in the oppositie direction. (Addition of negative one multiple the vector, ie vector + $(s * -1)$ -&gt; this is a very handy way to think of subtraction)</p>
 
-<p><img src="/on-data/images/linear_algebra/vector_operations.jpg" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/vector_operations.jpg" alt="" width="400px"></p>
 
 <p><strong>Thinking of vectors as representing attributes of objects</strong></p>
 
@@ -426,13 +426,13 @@ They allow us to represent lots of lists of data together.</p>
 
 <p>Our vector operations still apply to these house objects, we can do operations on multiple houses, adding and multiplying (and introducing the concept of a negative house if there’s such a thing)</p>
 
-<p><img src="/on-data/images/linear_algebra/vectors_as_attributes.jpg" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/vectors_as_attributes.jpg" alt="" width="400px"></p>
 
 <p><strong>Doing operations with vectors</strong></p>
 
 <p>We have the following vectors;</p>
 
-<p><img src="/on-data/images/linear_algebra/doingvectoroperations.jpg" alt="" height="400px"></p>
+<p><img src="/on-data/images/linear_algebra/doingvectoroperations.png" alt="" width="400px"></p>
 
 <p>$a$ = $\begin{bmatrix}2 \ 2\end{bmatrix}$ 
 $-b$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$ 
@@ -452,11 +452,11 @@ $d$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$</p>
 
 <p>We can define a vector, say $r$, without any reference to any coordinate system. We can treat it as a geometric object, with just two properties, it’s length (size) and its direction.</p>
 
-<p><img src="/on-data/images/linear_algebra/vector_r.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/vector_r.png" alt="" width="200px"></p>
 
 <p>If we wanted to calculated the size, or the length of $r$, we could use a coordinate system with two axis that are orthogonal to each other.</p>
 
-<p><img src="/on-data/images/linear_algebra/i_j_axis.png" alt="" height="200px"><br></p>
+<p><img src="/on-data/images/linear_algebra/i_j_axis.png" alt="" width="200px"></p>
 
 <p>$r = ai + bj$ -&gt; a number of i, and b number of j</p>
 
@@ -472,7 +472,7 @@ $d$ = $\begin{bmatrix}-1 \ 2\end{bmatrix}$</p>
 
 <p>$\lVert r \rVert = \sqrt{a^2 + b^2}$</p>
 
-<p><img src="/on-data/images/linear_algebra/denoting_r_2d.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/denoting_r_2d.png" alt="" width="400px"></p>
 
 <p><strong>We define the size of a vector through the sums of the squares of its components</strong></p>
 
@@ -520,7 +520,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Say we have two vectors, $r$ and $s$, $r$ has the components $ri$ and $rj$, $s$ has the components $si$ and $sj$</p>
 
-<p><img src="/on-data/images/linear_algebra/r_and_s.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/r_and_s.png" alt="" width="300px"></p>
 
 <p>We define $r . s$ (the dot product) as multiplying the $i$ components and the $j$ components and then summing them.</p>
 
@@ -528,7 +528,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Another way of saying this is; the dot product of two vectors is the sum of their componentwise products;</p>
 
-<p><img src="/on-data/images/linear_algebra/dotproduct2.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/dotproduct2.png" alt="" width="400px"></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">dot</span><span class="p">(</span><span class="n">v</span><span class="p">:</span> <span class="n">Vector</span><span class="p">,</span> <span class="n">w</span><span class="p">:</span> <span class="n">Vector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
     <span class="s">"""Computes v_1 * w_1 + ... + v_n * w_n"""</span>
@@ -541,7 +541,7 @@ assert dot([1, 2, 3], [4, 5, 6]) == 32 # 1 * 4 + 2 * 5 + 3 * 6
 
 <p>It’s the length of the vector you’d get if you projected v onto w.</p>
 
-<p><img src="/on-data/images/linear_algebra/dotproduct1.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/dotproduct1.png" alt="" width="400px"></p>
 
 <p>The dot product is therefore a scalar number not a vector. However, we get the vector of the dotted line above by multiplying $w$ by the dot product.</p>
 
@@ -599,11 +599,11 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The cosine rule, when combined with the dot product can tell us <strong>the degree to which the two vectors are pointing in the same direction</strong>.</p>
 
-<p><img src="/on-data/images/linear_algebra/cosine_rule.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/cosine_rule.png" alt="" width="300px"></p>
 
 <p>First, translate out the cosine rule using vector notation;</p>
 
-<p><img src="/on-data/images/linear_algebra/cosine_as_vector.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/cosine_as_vector.png" alt="" width="300px"></p>
 
 <p>We know that $\lVert r-s \rVert^2$ is equal to $(r-s).(r-s)$</p>
 
@@ -628,7 +628,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
   <p>dot product of a vector is a scalar quantity describing only the magnitude of a particular vector</p>
 </blockquote>
 
-<p><img src="/on-data/images/linear_algebra/dotproduct3.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/dotproduct3.png" alt="" width="400px"></p>
 
 <p>If the vectors are 90 degrees from one another</p>
 <ul>
@@ -673,9 +673,9 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>Here, the hypotenuse is the size of $s$</p>
 
-<p><img src="/on-data/images/linear_algebra/projection.png" alt="" height="200px"><br></p>
+<p><img src="/on-data/images/linear_algebra/projection.png" alt="" width="200px"></p>
 
-<p><img src="/on-data/images/linear_algebra/projection3.png" alt="" height="200px"><br></p>
+<p><img src="/on-data/images/linear_algebra/projection3.png" alt="" width="200px"></p>
 
 <p>Remember that the scalar projection is the size of the green vector.</p>
 
@@ -693,7 +693,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The dot product gives us the projection multiplied by the size of r $\lVert r \rVert$</p>
 
-<p><img src="/on-data/images/linear_algebra/projection2.png" alt="" height="200px"><br></p>
+<p><img src="/on-data/images/linear_algebra/projection2.png" alt="" width="200px"></p>
 
 <p>We can get the adjacent size by diving the dot product by mod r</p>
 
@@ -757,7 +757,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>The “span” of $\hat{e_1}$ and $\hat{e_2}$ is the set of all their linear combinations; $a\hat{e_1} + b\hat{e_2}$</p>
 
-<p><img src="/on-data/images/linear_algebra/r_intermsofe.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/r_intermsofe.png" alt="" width="400px"></p>
 
 <p>$r$ exists independently of the basis vectors. It takes us from an origin to another point, but we use the coordinate system to describe $r$.</p>
 
@@ -775,7 +775,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><msub><mi>b</mi><mn>2</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>∗</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>∗</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b_1.b_2 = (2*-2) + (1*4) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
-<p><img src="/on-data/images/linear_algebra/axistransformation1.png" alt="" height="400px"><br></p>
+<p><img src="/on-data/images/linear_algebra/axistransformation1.png" alt="" width="400px"></p>
 
 <p>You can project $r$ down onto $b_2$ and calculate the vector projection. This will tell you “how much of that axis ($b_2$) you need”. You then do the same for $b_1$</p>
 
@@ -871,9 +871,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Formula required to show linear independence;</p>
 
-<p><img src="../images/linear_algebra/basis_linearindependence.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/basis_linearindependence.png" alt="" width="400px"></p>
 
 <p>Linearly <strong>dependent</strong>;</p>
 
@@ -885,9 +883,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Similarly, $\mathbf{a} = q_1\mathbf{b} + q_2\mathbf{c}$</p>
 
-<p><img src="../images/linear_algebra/basis_linearindependence2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/basis_linearindependence2.png" alt="" width="400px"></p>
 
 <p>Find $q_1, q_2$</p>
 
@@ -928,9 +924,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>It doesn’t warp or fold space which is what the linear bit in linear algebra means. Things might be stretched or rotated or inverted, but everything remains evenly spaced and linear combinations still work.</p>
 
-<p><img src="../images/linear_algebra/axistransformation2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/axistransformation2.png" alt="" width="400px"></p>
 
 <h3 id="applications-of-changing-basis">
 <a class="anchor" href="#applications-of-changing-basis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications of changing basis</h3>
@@ -943,9 +937,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>There’s some theoretical disputes, whether the distance should be measured straight (y-axis) or orthognally (the angle).</p>
 
-<p><img src="../images/linear_algebra/applicationofchangbasis.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/applicationofchangbasis.png" alt="" width="400px"></p>
 
 <p>In a neural network for face recognition, the goal of the learning process is going to be to somehow derive a set of basis vectors that extract the most information-rich features of the faces.</p>
 
@@ -979,9 +971,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>If you were to draw a straight line from the co-ordinate of the ball onto the vector of the wind, what is the size of that vector in terms of the wind vector.</p>
 
-<p><img src="../images/linear_algebra/projection3.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/projection3.png" alt="" width="200px"></p>
 
 <p>Remember that the scalar projection is the size of the green vector.</p>
 
@@ -1088,15 +1078,13 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Think of vectors as points (i.e. where the arrow points) and think of that point moving to some other point.</p>
 
-<p><img src="../images/linear_algebra/lineartransformations1.png" width="450">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/lineartransformations1.png" alt="" width="400"></p>
 
 <p>We have the ability to move around all the points in space. Though the types of transformations are limited to <code class="language-plaintext highlighter-rouge">linear</code> transformations.</p>
 
 <p>Visually, what this means is that all lines in our original coordinate system must remain lines, and our origin remains fixed.</p>
 
-<p><img src="../images/linear_algebra/lineartransformations2.png" width="450">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/lineartransformations2.png" alt="" width="400"></p>
 
 <p>It’s not just the vertical and horizontal lines that must remain lines, but all angles, so diagonals as well. Grid lines remain parallel and evenly spaces.</p>
 
@@ -1114,12 +1102,11 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>In a 2 dimensional matrix, we need just four numbers to know where any vector will now land. The coordinates for $\hat{i}$ and $\hat{j}$.</p>
 
-<p><img src="../images/linear_algebra/lineartransformations3.png" width="400">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/lineartransformations3.png" alt="" width="400"></p>
 
 <p>Any vector can then be translated from the old basis vectors to the new transformation.</p>
 
-<p><img src="../images/linear_algebra/lineartransformations4.png" width="400"></p>
+<p><img src="/on-data/images/linear_algebra/lineartransformations4.png" alt="" width="400"></p>
 
 <p><code class="language-plaintext highlighter-rouge">in matrix multiplication, remember; rows times cols</code></p>
 
@@ -1157,9 +1144,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Would expand our basis vectors by 3x and 2y.</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation1.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation1.png" alt="" width="200"></p>
 
 <p>A fraction would shrink space.</p>
 
@@ -1167,9 +1152,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 2 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span>
 
-<p><img src="../images/linear_algebra/matrix_transformation2.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation2.png" alt="" width="200"></p>
 
 <p>Two negatives will invert everything. Inversion.</p>
 
@@ -1177,9 +1160,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span>
 
-<p><img src="../images/linear_algebra/matrix_transformation3.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation3.png" alt="" width="400"></p>
 
 <p>The following matrix acts as a vertical mirror plane $\begin{pmatrix} -1 &amp; 0 \ 0 &amp; 1 \end{pmatrix}$</p>
 
@@ -1197,17 +1178,13 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Creates a parallelogram;</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation4.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation4.png" alt="" width="400"></p>
 
 <p>A 90 degree anticlockwise rotation will look like;</p>
 
 <p>$\begin{bmatrix} 1 &amp; 0 \ 0 &amp; 1 \end{bmatrix}$ to $\begin{bmatrix} 0 &amp; -1 \ 1 &amp; 0 \end{bmatrix}$</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation5.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation5.png" alt="" width="400"></p>
 
 <p>A general expression for a rotation in 2d can be written as;</p>
 
@@ -1226,9 +1203,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>Like function notation, we read from inside out $f(g(x))$</p>
 
-<p><img src="../images/linear_algebra/composition1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/composition1.png" alt="" width="400"></p>
 
 <p>You can see why we do <code class="language-plaintext highlighter-rouge">rows times cols</code>.</p>
 
@@ -1240,9 +1215,7 @@ b_4 = \begin{bmatrix}0\\0\\0\\3\end{bmatrix}</annotation></semantics></math></sp
 
 <p>The image below gives us the first column of our composition.</p>
 
-<p><img src="../images/linear_algebra/composition2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/composition2.png" alt="" width="400"></p>
 
 <p>The intuition is to think of applying one matrix transformation after another. This is why the order in which the transformations are applied matters. To rotate and then shear has a different effect than if you shear and then rotate.</p>
 
@@ -1289,15 +1262,11 @@ $\begin{bmatrix} 1 &amp; 0 \ 0 &amp; 1 \end{bmatrix}$</p>
 
 <p>If we have two unit vectors (in orange) and another vector, $r = \begin{bmatrix} 3 \ 2 \end{bmatrix}$ (in pink), before any transformations - these look like this:</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation6.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation6.png" alt="" width="200"></p>
 
 <p>The matrix, $A = \begin{pmatrix} 1/2 &amp; -1 \ 0 &amp; 3/4 \end{pmatrix}$ will transform them;</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation7.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation7.png" alt="" width="200"></p>
 
 <p><strong>Q1</strong></p>
 
@@ -1340,8 +1309,7 @@ bottom right 0.5</p>
 
 <p>Best corresponds to;</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation8.png" width="200">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation8.png" alt="" width="200"></p>
 
 <p><strong>Q4</strong></p>
 
@@ -1374,7 +1342,7 @@ bottom right 0.5</p>
 
 <p>$A^{-1}$, the inverse of $A$ does exact opposite of what $A$ does.</p>
 
-<p>By multiplying $A$ by $A^{-1}$, we reverse whateever $A$ does and we get the identity matrix $I$, the matrix that does nothing.</p>
+<p>By multiplying $A$ by $A^{-1}$, we reverse whatever $A$ does and we get the identity matrix $I$, the matrix that does nothing.</p>
 
 <p>$Ar = s$ becomes $A^{-1} Ar = A^{-1} s$</p>
 
@@ -1385,7 +1353,7 @@ bottom right 0.5</p>
 <h3 id="linear-algebra-to-solve-systems-of-equations">
 <a class="anchor" href="#linear-algebra-to-solve-systems-of-equations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linear algebra to solve systems of equations</h3>
 
-<p>All of sudden we’ve moved away from planning with geomgetry and vector spaces and back to linear equations.</p>
+<p>All of sudden we’ve moved away from planning with geometry and vector spaces and back to linear equations.</p>
 
 <p>Systems of equations are a list of variables (things you don’t know) and a list of equations relating to them.</p>
 
@@ -1396,7 +1364,7 @@ bottom right 0.5</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">4x_1 = 5x_2 = - 13</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="mord">4</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="mord">5</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mord">3</span></span></span></span>
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>2</mn><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">-2x_1 + 3x_2 = 9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span></span></span></span></p>
 
-<p>In matrix notiation, we can write the system more compactly;</p>
+<p>In matrix notation, we can write the system more compactly;</p>
 
 <p>$Ax = b$ with;</p>
 
@@ -1406,8 +1374,7 @@ bottom right 0.5</p>
 
 <p>Arranging our systems of equations like this, sheds some geometric light on the problem;</p>
 
-<p><img src="../images/linear_algebra/systemsofequations1.png" width="400">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/systemsofequations1.png" alt="" width="400"></p>
 
 <p>We’re looking for a vector $\bf{x}$, that after applying the transformation $A$, lands on $\bf{v}$</p>
 
@@ -1417,29 +1384,25 @@ bottom right 0.5</p>
 
 <p>If you first apply $A$, then $A^{-1}$ you end up where you started.</p>
 
-<p><img src="../images/linear_algebra/systemsofequations2.png" width="200">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/systemsofequations3.png" alt="" width="200"></p>
 
-<p>$A^{-1}A$ gets you back to where you started; multiplied out it gives you the identity matrix, the equivilent of multiplying by 1 in matrix multiplication.</p>
+<p>$A^{-1}A$ gets you back to where you started; multiplied out it gives you the identity matrix, the equivalent of multiplying by 1 in matrix multiplication.</p>
 
 <p>Therefore;</p>
 
-<p><img src="../images/linear_algebra/systemsofequations3.png" width="200">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/systemsofequations3.png" alt="" width="400"></p>
 
 <p>If the determinant of $A$ is zero, it has manipulated space into a lower dimension, as a result we cannot use it’s inverse to understand what matrix was applied onto $\bf{x}$ to produce $\bf{v}$.</p>
 
 <p>The equation can be solved, but only with the vector $\bf{v}$ lives on the new dimension (in the case of 3D to 2D, the vector must live on that line).</p>
 
-<p><img src="../images/linear_algebra/systemsofequations4.png" width="300">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/systemsofequations4.png" alt="" width="300"></p>
 
-<p>When the output of a transformation is a line, i.e. it’s one-dimensional, we say the transformation has a rank of 1. If all vectors land on a two-dimensional place, the tranksformation has a rank of 2, and so on.</p>
+<p>When the output of a transformation is a line, i.e. it’s one-dimensional, we say the transformation has a rank of 1. If all vectors land on a two-dimensional place, the transformation has a rank of 2, and so on.</p>
 
 <p>The set of outputs for the transformation matrix is called the <em>column space</em>. The columns tell you where your vectors land, and the span of the columns gives you all possible outputs.</p>
 
-<p><img src="../images/linear_algebra/systemsofequations5.png" width="300">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/systemsofequations5.png" alt="" width="300"></p>
 
 <p>The rank is the number of dimensions in the column space. If a rank mantains it’s number of dimensions, then it is regarded as “<em>full rank</em>”.</p>
 
@@ -1486,17 +1449,17 @@ bottom right 0.5</p>
 
 <p>The identity matrix is $I = \begin{pmatrix} 1 &amp; 0 &amp; 0 \ 0 &amp; 1 &amp; 0 \ 0 &amp; 0 &amp; 1 \end{pmatrix}$</p>
 
-<p>You could perform back substition, by taking each column in the inverse matrix and use the output of the identity matrix.</p>
+<p>You could perform back substitution, by taking each column in the inverse matrix and use the output of the identity matrix.</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>4</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo>∗</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>11</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>21</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>31</mn></msub></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo>=</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{pmatrix} 1 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 4 \\ 1 &amp; 1 &amp; 2 \end{pmatrix} * \begin{pmatrix} b_{11}\\ b_{21}\\ b_{31} \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<p>However, we can use elimation to do it more efficiently.</p>
+<p>However, we can use elimination to do it more efficiently.</p>
 
 <p>Subtracting the first row from rows two and three.</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∗</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo>=</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">A* \begin{pmatrix} 1 &amp; 1 &amp; 3 \\ 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; -1 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<p>If we mulitply the bottom row by -1 we can get the matrix in echleon form;</p>
+<p>If we multiply the bottom row by -1 we can get the matrix in echelon form;</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∗</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo>=</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">A* \begin{pmatrix} 1 &amp; 1 &amp; 3 \\ 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; -1 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-2.8100000000000005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
@@ -1538,10 +1501,9 @@ bottom right 0.5</p>
 
 <p><strong>Q2</strong></p>
 
-<p>Given another system, $Br = t$
-<img src="../images/linear_algebra/solvinglineq_inverse1.png" width="500">
-<br>
-<br></p>
+<p>Given another system, $Br = t$</p>
+
+<p><img src="/on-data/images/linear_algebra/solvinglineq_inverse1.png" alt="" width="450"></p>
 
 <p>We need to time the first row by three, then minus that from the second row. This will ensure the first value of the row is 0.</p>
 
@@ -1630,8 +1592,8 @@ bottom right 0.5</p>
 
 <span class="c1"># Price of individual elements;
 </span><span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>     
-
 </code></pre></div></div>
+
 <p><strong>Q7</strong></p>
 
 <p>Find the inverse of the matrix you used in Question 1</p>
@@ -1683,28 +1645,21 @@ bottom right 0.5</p>
 
 <p>This is the determinant of the transformation matrix. <em>the determinant is how much we grow/shrink space</em>. More precisely, it is the factor by which a given area increases or decreases.</p>
 
-<p><img src="../images/linear_algebra/determinants1.png" width="400">
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants1.png" alt="" width="400"></p>
 
 <p>A more concrete example,</p>
 
-<p><img src="../images/linear_algebra/determinants5.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants5.png" alt="" width="400"></p>
 
 <p>However, these transformations are not always equal.</p>
 
 <p>Adding $b$ into the matrix;</p>
 
-<p><img src="../images/linear_algebra/determinants2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants2.png" alt="" width="400"></p>
 
 <p>The area, the determinant, is still the same $ad$</p>
 
-<p><img src="../images/linear_algebra/determinants6.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants6.png" alt="" width="400"></p>
 
 <p>To get the area of a general matrix, such as;</p>
 
@@ -1712,9 +1667,7 @@ bottom right 0.5</p>
 
 <p>The maths gets a little complex; but is $ad - bc$</p>
 
-<p><img src="../images/linear_algebra/determinants3.png" width="500">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants3.png" alt="" width="450"></p>
 
 <p>This is finding the determinant of A</p>
 
@@ -1722,9 +1675,7 @@ bottom right 0.5</p>
 
 <p>If a 2D matirx transforms the space such that all points fit onto a single line or even a single point, then the determinant will be 0.</p>
 
-<p><img src="../images/linear_algebra/determinants7.png" width="500">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants7.png" alt="" width="450"></p>
 
 <p>If a transformation has a determinant of 0, it is transforming the space into a smaller dimension. For a 2-dimenisonal space this is putting everything onto a single line, but the concept applies to $n$ dimensions.</p>
 
@@ -1734,9 +1685,7 @@ bottom right 0.5</p>
 
 <p>You can scale an area by a negative amount. As we’ve seen with vector operations, this does not mean shrinking the area but rather reversing it’s orientation. “flipping space”. They “invert the orientation of space.</p>
 
-<p><img src="../images/linear_algebra/determinants8.png" width="500">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants8.png" alt="" width="450"></p>
 
 <p>In a 3D space, the determinant tells us how much volume gets scaled.</p>
 
@@ -1771,9 +1720,7 @@ bottom right 0.5</p>
 
 <p>The matrix is transforming every point in space along a line. Therefore the determinant is going to be 0.</p>
 
-<p><img src="../images/linear_algebra/determinants4.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/determinants4.png" alt="" width="450"></p>
 
 <p>If we’re working in 3D space, a 3x3 matrix and one of the new basis vectors is just a linear multiple of the other two (ie not linearly independent), the new space is a plane.</p>
 
@@ -1927,9 +1874,7 @@ There is no need to edit this function."""</span>
 
 <p>When we started, we said that multiplying a matrix by a vector or with another matrix is a process of taking every element in each row in turn, multiplied with corresponding element in each column in the other matrix, and adding them all up and putting them in place.</p>
 
-<p><img src="../images/linear_algebra/einsteinconvention1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/einsteinconvention1.png" alt="" width="400"></p>
 
 <p>Einstein convention,says, you have a sum over some elements $j$, for all the possible combinations of $i$ and $k$. As this is a repeated index, don’t bother with the sum;</p>
 
@@ -1941,9 +1886,7 @@ There is no need to edit this function."""</span>
 
 <p>As long as you have the same number of $j$s you can multiply them together.</p>
 
-<p><img src="../images/linear_algebra/einsteinconvention2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/einsteinconvention2.png" alt="" width="400"></p>
 
 <blockquote>
   <p>Now, all sorts of matrix properties that you might want, inverses and so on, determinants, all start to get messy and mucky, and you sometimes can’t even compute them when you’re doing this sort of thing.</p>
@@ -1959,17 +1902,13 @@ There is no need to edit this function."""</span>
 
 <p>That’s the same as doing a matrix transformation, where $u$ is a row and $v$ a column.</p>
 
-<p><img src="../images/linear_algebra/einsteinconvention3.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/einsteinconvention3.png" alt="" width="400"></p>
 
 <p>Projection is symmetric. Projection is the dot product.</p>
 
 <p>If you project $\hat{u}$ down onto $\hat{e_1}$ and vice versa, the two triangles split by the pink line are identical.</p>
 
-<p><img src="../images/linear_algebra/einsteinconvention4.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/einsteinconvention4.png" alt="" width="400"></p>
 
 <blockquote>
   <p>there is this connection between this numerical thing, matrix multiplication, and this geometric thing, projection</p>
@@ -2087,14 +2026,14 @@ There is no need to edit this function."""</span>
 
 <p>Let $\mathbf{u}$ and $\mathbf{v}$ be vectors with $n$ elements. Write the dot product;</p>
 
+<p>–TODO</p>
+
 <h3 id="using-non-square-matrices-to-do-a-projection">
 <a class="anchor" href="#using-non-square-matrices-to-do-a-projection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using non-square matrices to do a projection</h3>
 
 <p>Shadows are an example of a transformation that reduces the number of dimensions. For example, 3D objects in the world cast shadows on surfaces that are 2D.</p>
 
-<p><img src="../images/linear_algebra/nonsquareprojections1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/nonsquareprojections1.png" alt="" width="400"></p>
 
 <p>The sun is sufficiently far away that effectively all of its rays come in parallel to each other. We can describe their direction with the unit vector $\hat{\mathbf{s}}$</p>
 
@@ -2150,9 +2089,7 @@ $A3 = [0, 0, 0]$</p>
 
 <p>Another use of non-square matrices is applying a matrix to a list of vectors.</p>
 
-<p><img src="../images/linear_algebra/nonsquare1.png" width="600">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/nonsquare1.png" alt="" width="600"></p>
 
 <p>Observe that it’s the same result as treating the columns as separate vectors and calculating them individually.</p>
 
@@ -2189,9 +2126,7 @@ $A3 = [0, 0, 0]$</p>
 
 <p>The lines in yellow describe the world of Panda Bear. To him, these vectors are [1,0] and [0,1] but in my frame, they are [3,1] and [1,1]</p>
 
-<p><img src="../images/linear_algebra/matrix_basis1.png" width="500">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_basis1.png" alt="" width="500"></p>
 
 <p>Bear’s transformation matrix is therefore; $\begin{bmatrix} 3&amp;1 \ 1&amp;1 \end{bmatrix}$</p>
 
@@ -2203,9 +2138,7 @@ $A3 = [0, 0, 0]$</p>
 
 <p><code class="language-plaintext highlighter-rouge">[(3 * 3/2) + (1 * 1/2), (1 * 3/2) + (1 * 1/2)]</code> or <code class="language-plaintext highlighter-rouge">[5, 2]</code></p>
 
-<p><img src="../images/linear_algebra/matrix_basis2.png" width="500">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_basis2.png" alt="" width="500"></p>
 
 <p>However, we need to figure out how to go the other way. Translating my world to Bear’s world.</p>
 
@@ -2234,9 +2167,7 @@ $A3 = [0, 0, 0]$</p>
 
 <p><em>you can to a dot product to verfiy they are at 90 degrees to one another (orthogonal)</em></p>
 
-<p><img src="../images/linear_algebra/matrix_basis3.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_basis3.png" alt="" width="400"></p>
 
 <p>Bear’s transformation matrix, ie the matrix that converts a vector in Bear’s world to my coordinate system;</p>
 
@@ -2330,9 +2261,7 @@ s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
 c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
 M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.13278em;"><span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.93em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span>
 
-<p><img src="../images/linear_algebra/matrix_transformation_newbasis1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation_newbasis1.png" alt="" width="400"></p>
 
 <p>However, we don’t know what a 45 degree transformation looks like in Bear’s world.</p>
 
@@ -2348,15 +2277,11 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Or written as; $B^{-1} R B = R_B$</p>
 
-<p><img src="../images/linear_algebra/matrix_transformation_newbasis2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/matrix_transformation_newbasis2.png" alt="" width="400"></p>
 
 <blockquote>
   <p>If we want to transform to normal form normal coordinate systems, then the translation matrices also change. We have to be mindful of that</p>
-</blockquote>
 
-<blockquote>
   <p>We’ve got the transformation matrix R, wrapped around by B, B is the minus 1, that does the translation from my world to the world of the new basis system.</p>
 </blockquote>
 
@@ -2410,6 +2335,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <p>Imagine we have a square matrix $A$, with dimensions n x n. This defines a transformation (ie we apply to vectors to transform them), the columns in this matrix are the basis vectors in a new space.</p>
 
 <p>In this matrix;</p>
+
 <ul>
   <li>the vectors are orthogonal to each other and of unit length
     <ul>
@@ -2423,9 +2349,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>The result of the multiplication is an identity matrix;</p>
 
-<p><img src="../images/linear_algebra/orthogonal_matrices1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/orthogonal_matrices1.png" alt="" width="400"></p>
 
 <p>$A^T$ is a valid inverse of $A$</p>
 
@@ -2448,6 +2372,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <p>The determinant of an orthogonal matrix must be either plus or minus one (depending on if you do $A^T * A or A * A^T$).</p>
 
 <p>We want our transformation matrix to be an orthogonal matrix, we want the basis vectors to be orthonormal.</p>
+
 <ul>
   <li>the inverse is easy to compute</li>
   <li>the transformation is reversible as it doesn’t collapse the space</li>
@@ -2462,9 +2387,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>We can check linear independence by calculating the determinant. If there are linearly independent the determinant will be 0.</p>
 
-<p><img src="../images/linear_algebra/grahmschmidt1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/grahmschmidt1.png" alt="" width="400"></p>
 
 <p>However, these vectors are not orthogonal to one another and are not of unit length.</p>
 
@@ -2476,15 +2399,13 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>$v_2$ can now be thought of as (1) a component of that’s in the direction of $e_1$ plus (2) a component that is perpendicular to $e_1$, which we can find by taking the projection of $v_2$ onto $e_1$</p>
 
-<p><img src="../images/linear_algebra/grahmschmidt2.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/grahmschmidt2.png" alt="" width="250"></p>
 
 <p>The vector projection is $\frac{(v_2 . e_1)}{\lVert e_1 \rVert}$ or simply ($v_2 . e_1$) as $e_1$ has already been normalised, it has size 1. To get this as a vector, not just a number we multiply by $e_1$</p>
 
 <p>$v_2 = (v_2 . e_1) e_1$ + $u_2$</p>
 
-<p>Rewritten as</p>
+<p>Rewritten as;</p>
 
 <p>$u_2 = v_2 - (v_2 . e_1) e_1$</p>
 
@@ -2492,13 +2413,11 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>$e_2 = \frac{u_2}{\lVert u_2 \rVert}$</p>
 
-<p><img src="../images/linear_algebra/grahmschmidt3.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/grahmschmidt3.png" alt="" width="400"></p>
 
 <p>$v_3$ is not linear combination of $v_1$ and $v_2$, therefore it is not in the plane defined by $v_1$ and $v_2$ and following that, will not be defined by $e_1$ and $e_2$.</p>
 
-<p>As a result, we need to project $v_3$ down onto the plane of $e_1$ and $e_2$ and thet pojection will be some vector in the plane composed of $e_1$s and $e_2$s</p>
+<p>As a result, we need to project $v_3$ down onto the plane of $e_1$ and $e_2$ and the projection will be some vector in the plane composed of $e_1$s and $e_2$s</p>
 
 <p>The perpendicular vector $u_3$ is what is left when you remove the elements of $v_3$ made up of $e_1$ and $e_2$</p>
 
@@ -2609,9 +2528,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><msub><mi>v</mi><mn>3</mn></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">v_1 = \begin{bmatrix} 1\\1\\1\end{bmatrix} v_2 = \begin{bmatrix} 2\\0\\1\end{bmatrix} v_3 = \begin{bmatrix} 3\\1\\-1\end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<p><img src="../images/linear_algebra/reflecting.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/reflecting.png" alt="" width="200"></p>
 
 <p>Using the Grahm-Schimdt procedure to get some orthonormal basis vectors that desrribe the plane and its normal $v_3$</p>
 
@@ -2705,9 +2622,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p>Say we have some vector $r$ that we want to reflect down through the pane, and get $r’$ on the other side;</p>
 
-<p><img src="../images/linear_algebra/reflecting2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/reflecting2.png" alt="" width="400"></p>
 
 <p>We can think of $r$ as composed of some vector within the pane (composed of $e_1$s and $e_2$s) - this the dotted line perpendicular to $e_1$ and $e_2$ and some vector that is normal (ie made up of $e_3$s) - this is the dotted line up to $r$</p>
 
@@ -2725,17 +2640,13 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
 <p><em>Note</em> in this example we’re changing from our basis vectors to the plane’s and then translating back into our basis. So the $E$ and the $E^{-1}$ are flipped compared to when we were working with Bear.</p>
 
-<p><img src="../images/linear_algebra/reflecting3.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/reflecting3.png" alt="" width="250"></p>
 
 <p>$E T_E E^{-1}r = r’$</p>
 
 <p>Written out the whole thing looks a little ungodly, but that’s more down to the volume of arthimetic required than the complexity</p>
 
-<p><img src="../images/linear_algebra/reflecting4.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/reflecting4.png" alt="" width="400"></p>
 
 <p>Generalised, this is the process of reflecting a point in space in a mirror (we can transform something through the looking glass).</p>
 
@@ -2800,9 +2711,7 @@ i.e. it will be either the vector dot product, matrix multiplication, or matrix 
   <p>A transformation in which all points along a given line L remain fixed while other points are shifted parallel to L by a distance proportional to their perpendicular distance from L. Shearing a plane figure does not change its area. The shear can also be generalized to three dimensions, in which planes are translated instead of lines. - Wolfram</p>
 </blockquote>
 
-<p><img src="../images/linear_algebra/shear1.gif" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/shear1.gif" alt="" width="250"></p>
 
 <p>Typically, we have thought about how these transformations change a single vector. What about if the matrix was applied to all vectors in the space?</p>
 
@@ -2810,9 +2719,7 @@ i.e. it will be either the vector dot product, matrix multiplication, or matrix 
 
 <p>Applying a scaling of 2 in the vertical direction, the square becomes a rectangle. Applying a horizontal sheer gives us a parrallelegram.</p>
 
-<p><img src="../images/linear_algebra/eigen1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen1.png" alt="" width="400"></p>
 
 <p>The square helps us to understand what is happening to many vectors. However, some vectors remain on the same line they started on, while others do not.</p>
 
@@ -2821,9 +2728,7 @@ i.e. it will be either the vector dot product, matrix multiplication, or matrix 
 <p>If we scale vertically, the diagonal vector will <strong>not</strong> be pointing in the same direction.
 Any other vector’s direction would have changed (apart from the horizontal and vertical, their angle and size will have changed)</p>
 
-<p><img src="../images/linear_algebra/eigen2.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen2.png" alt="" width="250"></p>
 
 <p>The horizontal and vertical vectors are charactersitic of this particular trnasformation. They are the only ones that do not change. They are referred to as eigenvectors.</p>
 
@@ -2833,23 +2738,17 @@ Any other vector’s direction would have changed (apart from the horizontal and
 
 <p>Take a pure shear (where there is no rotation or scaling so the area is unchanged), here we would have one eigenvector, along the horiztonal;</p>
 
-<p><img src="../images/linear_algebra/eigen3.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen3.png" alt="" width="250"></p>
 
 <p>In rotation, there are no eigenvectors.</p>
 
-<p><img src="../images/linear_algebra/eigen4.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen4.png" alt="" width="250"></p>
 
 <p><strong>Practice</strong></p>
 
 <p>In all examples, we’ll start with the following vectors and apply a transformation $T$</p>
 
-<p><img src="../images/linear_algebra/eigen5.png" width="250">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen5.png" alt="" width="250"></p>
 
 <p>$T_1= \begin{bmatrix} 2&amp;0\0&amp;2 \end{bmatrix}$</p>
 
@@ -2879,9 +2778,7 @@ Any other vector’s direction would have changed (apart from the horizontal and
 
 <p>$T_6$ scales all vectors by 2, but alters the angle at which the orange and purple vectors are pointing</p>
 
-<p><img src="../images/linear_algebra/eigen6.png" width="700">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen6.png" alt="" width="650"></p>
 
 <p>To summaise, eigenvectors are those that lay along the same path after applying a linear transformation to a space. Eigenvalues are the amount that each of those vectors has been stretched in the process (or negative if flipped).</p>
 
@@ -2890,17 +2787,13 @@ Any other vector’s direction would have changed (apart from the horizontal and
 <p>A transformation that is some combination of horizontal shearing and vertical scaling does have two eigenvectors.
 The first which is most obvious is the horiztonal vector. The second is between the organge and the pink vector. Though the concept is straight forward, there are not always easy to spot.</p>
 
-<p><img src="../images/linear_algebra/eigen7.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen7.png" alt="" width="400"></p>
 
 <p>This problem is amplified in three or more dimensions, where we can’t simply use geometric representations to spot eigenvectors.</p>
 
 <p>In 3D scaling and shearing work much the same way, but rotation works differently. The eigenvector represents the axis of rotation.</p>
 
-<p><img src="../images/linear_algebra/eigen8.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigen8.png" alt="" width="400"></p>
 
 <h3 id="eigenvectors-a-formal-definition">
 <a class="anchor" href="#eigenvectors-a-formal-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eigenvectors, a formal definition</h3>
@@ -3080,9 +2973,7 @@ The first which is most obvious is the horiztonal vector. The second is between 
 
 <p>We start at $v_0$, then apply $T$ to get to $v_1$, then apply $T$ again, to get to $v_2$</p>
 
-<p><img src="../images/linear_algebra/eigenbasis1.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigenbasis1.png" alt="" width="400"></p>
 
 <p>$v_2$ is equivalent to applying $T$ to $v_1$ or applying $T$ to $v_0$ twice</p>
 
@@ -3128,9 +3019,7 @@ The first which is most obvious is the horiztonal vector. The second is between 
 
 <p>We now have a method which lets us apply a transformation matrix as many times as we’d like without paying a large computational cost.</p>
 
-<p><img src="../images/linear_algebra/eigenbasis2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/eigenbasis2.png" alt="" width="400"></p>
 
 <h3 id="eigenbasis-example">
 <a class="anchor" href="#eigenbasis-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eigenbasis example</h3>
@@ -3375,9 +3264,7 @@ The first which is most obvious is the horiztonal vector. The second is between 
 
 <p>We’re trying to build an expression that tells us, based on this network structure, which of these webpages is most relevant to the person who made the search.</p>
 
-<p><img src="../images/linear_algebra/pagerank1.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/pagerank1.png" alt="" width="200"></p>
 
 <p>By mapping all the possible links, we can build a model to estimate the amount of time we would expect Procrastinating Pat to spend on each webpage.</p>
 
@@ -3445,13 +3332,9 @@ The first which is most obvious is the horiztonal vector. The second is between 
 
 <blockquote>
   <p>Although there are many approaches for efficiently calculating eigenvectors that have been developed over the years, repeatedly multiplying a randomly selected initial guest vector by a matrix, which is called <em>the power method</em>, is still very effective</p>
-</blockquote>
 
-<blockquote>
   <p>The power method gives you one eigenvector, even though there will be <em>n</em> for an <em>n</em> webpage system, because of how we’ve structured our link matrix $L$, it will always give you an eigenvector with a value of 1 -&gt; this will be the largest eigenvalue</p>
-</blockquote>
 
-<blockquote>
   <p>In an example with lots of web pages, most pages won’t link to one another, there will be lots of 0s in <em>L</em>, this is referred to as a sparse matrix, allowing us to perform very efficient multiplication.</p>
 </blockquote>
 
@@ -3471,9 +3354,7 @@ The first which is most obvious is the horiztonal vector. The second is between 
 <p><strong>PageRank as a linear algebra problem</strong>
 Let’s imagine a micro-internet, with just 6 websites (<strong>A</strong>vocado, <strong>B</strong>ullseye, <strong>C</strong>atBabel, <strong>D</strong>romeda, <strong>e</strong>Tings, and <strong>F</strong>aceSpace). Each website links to some of the others, and this forms a network as shown,</p>
 
-<p><img src="../images/linear_algebra/pagerank2.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/pagerank2.png" alt="" width="400"></p>
 
 <p>Imagine we have 100 <em>Procrastinating Pat</em>s on our micro-internet, each viewing a single website at a time.
 Each minute the Pats follow a link on their website to another site on the micro-internet.
@@ -3585,9 +3466,7 @@ L_{A→F} &amp; L_{B→F} &amp; L_{C→F} &amp; L_{D→F} &amp; L_{E→F} &amp; 
 
 <p>Say a new website is added to the micro-internet: <em>Geoff’s</em> Website.</p>
 
-<p><img src="../images/linear_algebra/pagerank3.png" width="400">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/pagerank3.png" alt="" width="400"></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span>   <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">],</span>
                <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">],</span>
@@ -3690,9 +3569,7 @@ In PageRank, we care about the eigenvector of the link matrix, $L$, that has eig
 
 <p>PageRank can sometimes get into trouble if closed-loop structures appear. A simplified example might look like this,</p>
 
-<p><img src="../images/linear_algebra/pagerank4.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/pagerank4.png" alt="" width="200"></p>
 
 <p>Therefore the $L$ matrix will look like this;</p>
 
@@ -3726,9 +3603,7 @@ In PageRank, we care about the eigenvector of the link matrix, $L$, that has eig
 
 <p>For example;</p>
 
-<p><img src="../images/linear_algebra/pagerank5.png" width="200">
-<br>
-<br></p>
+<p><img src="/on-data/images/linear_algebra/pagerank5.png" alt="" width="200"></p>
 
 <p>With a link matrix;</p>
 
