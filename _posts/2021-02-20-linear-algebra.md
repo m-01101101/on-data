@@ -59,8 +59,7 @@ You're adding the $x$ and $y$ components together.
 
 $r + s = [r_x + s_x, r_y + s_y]$
 
-<img src="../images/linear_algebra/addingvectors.jpg" width="400">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/addingvectors.jpg)
 <br>
 
 In the example above $r = \begin{bmatrix} 1 \\ 2\end{bmatrix}$, $s = \begin{bmatrix} 3 \\ -1\end{bmatrix}$ we can arrive at $t$ geometrically, taking 1 step the right, 2 up, then 3 to the right, and one down.
