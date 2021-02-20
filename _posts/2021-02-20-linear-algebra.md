@@ -59,7 +59,7 @@ You're adding the $x$ and $y$ components together.
 
 $r + s = [r_x + s_x, r_y + s_y]$
 
-![]({{ site.baseurl }}/images/linear_algebra/addingvectors.jpg)
+![]({{ site.baseurl }}/images/linear_algebra/addingvectors.jpg | width=300)
 <br>
 
 In the example above $r = \begin{bmatrix} 1 \\ 2\end{bmatrix}$, $s = \begin{bmatrix} 3 \\ -1\end{bmatrix}$ we can arrive at $t$ geometrically, taking 1 step the right, 2 up, then 3 to the right, and one down.
@@ -69,7 +69,7 @@ We add the component parts (component wise), as add the $x$ coordinates and the 
 1. Multiplication by a scalar (i.e. number, because numbers scale vectors, so we use the terms interchangeably)
    <br>_negative numbers means reverse_
 
-<img src="../images/linear_algebra/vector_multiplication.jpg" width="200">
+![]({{ site.baseurl }}/images/linear_algebra/vector_multiplication.jpg | width=250)
 <br>
 
 We multiple each component in the vector by that scalar.
@@ -93,7 +93,7 @@ One way of doing so is to calculate the "residuals", which is the difference bet
 
 A better fit would have as much overlap as it can, reducing the residuals as much as possible.
 
-<img src="../images/linear_algebra/residuals.png" width="400">
+![]({{ site.baseurl }}/images/linear_algebra/residuals.png | width=400)
 
 
 In the example above, we'd improve the model in orange by decreasing or increasing $\mu$ (the height) and keeping $\sigma$ (the width) roughly the same.
@@ -110,35 +110,26 @@ $$ \mathrm{SSR}_\mathbf{p} = \lVert \mathbf{f} - \mathbf{g}_\mathbf{p} \rVert ^2
 p = [μ, σ]
 histogram(p)
 ```
-<img src="../images/linear_algebra/testing_rss.png" width="400">
 
+![]({{ site.baseurl }}/images/linear_algebra/testing_rss.png | width=400)
 
 ```python
 μ = 179 ; σ = 7
 p = [μ, σ]
 histogram(p)
 ```
-<img src="../images/linear_algebra/testing_rss1.png" width="400">
 
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/testing_rss1.png | width=400)<br>
 
 Since each parameter vector $\mathbf{p}$ represents a different bell curve, each with its own value for the sum of squared residuals, $\mathrm{SSR}$, we can draw the surface of $\mathrm{SSR}$ values over the space spanned by $\mathbf{p}$, such as $\mu$ and $\sigma$ in this example.
 
 Every point on this surface represents the SSR of a choice of parameters
 
-<img src="../images/linear_algebra/residuals_as_contours.png" width="400">
-
-<br>
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours.png | width=400)<br>
 
 We can take a ‘top-down’ view of the surface, and view it as a contour map, where each of the contours (in green here) represent a constant value for the $\mathrm{SSR}$.
 
-<img src="../images/linear_algebra/residuals_as_contours1.png" width="400">
-
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours1.png | width=400)<br>
 
 Often we can't see the whole parameter space, so instead of just picking the lowest point, we have to make educated guesses where better points will be.
 
@@ -152,7 +143,7 @@ For example, a model with parameters $\mathbf{p}'$ = $\mathbf{p}$ + $\Delta\math
 
 The $\Delta\mathbf{p}$ $\begin{bmatrix}-2 \\ 2\end{bmatrix}$ will give the best improvement in the model below;
 
-<img src="../images/linear_algebra/moving_contours.png" width="400">
+![]({{ site.baseurl }}/images/linear_algebra/moving_contours.png | width=400)
 
 $\mu$ and $\sigma$ have to be different, decrease $\mu$ along the x-axis, increase $\sigma$ along the y-axis.
 
@@ -213,9 +204,7 @@ Vector addition is _associative_ we can do it component by component.
 
 In the image below $\hat{i}$ and $\hat{j}$ are our _basis vectors_, things that define the space. Vector addition can be thought of as combining two scaled vectors of $\hat{i}$ and $\hat{j}$
 
-<img src="../images/linear_algebra/vector_addition.jpg" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_addition.jpg | width=400)<br>
 
 Mulitplication on vectors; $2r$ is 2 * the components of $r$
 
@@ -225,9 +214,7 @@ $$2r = \begin{bmatrix}2*3 \\ 2*2\end{bmatrix} = \begin{bmatrix}6 \\ 4\end{bmatri
 
 Vector subtraction; minus $r$ is not a shorter vector, that would be 0.5, rather it is in the oppositie direction. (Addition of negative one multiple the vector, ie vector + $(s * -1)$ -> this is a very handy way to think of subtraction)
 
-<img src="../images/linear_algebra/vector_operations.jpg" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_operations.jpg | width=400)<br>
 
 __Thinking of vectors as representing attributes of objects__
 
@@ -237,15 +224,13 @@ Vecotrs can represent information about an object. In this example, each vector 
 
 Our vector operations still apply to these house objects, we can do operations on multiple houses, adding and multiplying (and introducing the concept of a negative house if there's such a thing)
 
-<img src="../images/linear_algebra/vectors_as_attributes.jpg" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/vectors_as_attributes.jpg | width=400)<br>
 
 __Doing operations with vectors__
 
 We have the following vectors;
 
-<img src="../images/linear_algebra/doingvectoroperations.png" width="400">
+![]({{ site.baseurl }}/images/linear_algebra/doingvectoroperations.jpg | width=400)
 
 $a$ = $\begin{bmatrix}2 \\ 2\end{bmatrix}$ 
 $-b$ = $\begin{bmatrix}-1 \\ 2\end{bmatrix}$ 
@@ -264,15 +249,11 @@ Addition and scaling by a number are two main vector operations and allow us def
 
 We can define a vector, say $r$, without any reference to any coordinate system. We can treat it as a geometric object, with just two properties, it's length (size) and its direction.
 
-<img src="../images/linear_algebra/vector_r.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_r.png | width=400)<br>
 
 If we wanted to calculated the size, or the length of $r$, we could use a coordinate system with two axis that are orthogonal to each other.
 
-<img src="../images/linear_algebra/i_j_axis.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/i_j_axis.png | width=200)<br>
 
 $r = ai + bj$ -> a number of i, and b number of j
 
@@ -288,9 +269,7 @@ The size of a vector with two components is calculated using Pythagoras' theorem
 
 $\lVert r \rVert = \sqrt{a^2 + b^2}$
 
-<img src="../images/linear_algebra/denoting_r_2d.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/denoting_r_2d.png | width=400)<br>
 
 __We define the size of a vector through the sums of the squares of its components__
 
@@ -326,9 +305,7 @@ Any one side of a triangle has to be less than the sum of the other two sides.
 
 Say we have two vectors, $r$ and $s$, $r$ has the components $ri$ and $rj$, $s$ has the components $si$ and $sj$
 
-<img src="../images/linear_algebra/r_and_s.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/r_and_s.png | width=400)<br>
 
 We define $r . s$ (the dot product) as multiplying the $i$ components and the $j$ components and then summing them.
 
@@ -336,9 +313,7 @@ $r.s = ri * si + rj * sj$
 
 Another way of saying this is; the dot product of two vectors is the sum of their componentwise products;
 
-<img src="../images/linear_algebra/dotproduct2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct2.png | width=400)<br>
 
 ```python
 def dot(v: Vector, w: Vector) -> float:
@@ -352,9 +327,7 @@ assert dot([1, 2, 3], [4, 5, 6]) == 32 # 1 * 4 + 2 * 5 + 3 * 6
 
 It's the length of the vector you'd get if you projected v onto w.
 
-<img src="../images/linear_algebra/dotproduct1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct1.png | width=400)<br>
 
 The dot product is therefore a scalar number not a vector. However, we get the vector of the dotted line above by multiplying $w$ by the dot product.
 
@@ -399,15 +372,11 @@ Theta being the angle between a and b
 
 The cosine rule, when combined with the dot product can tell us __the degree to which the two vectors are pointing in the same direction__.
 
-<img src="../images/linear_algebra/cosine_rule.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/cosine_rule.png | width=400)<br>
 
 First, translate out the cosine rule using vector notation;
 
-<img src="../images/linear_algebra/cosine_as_vector.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/cosine_as_vector.png | width=400)<br>
 
 We know that $\lVert r-s \rVert^2$ is equal to $(r-s).(r-s)$
 
@@ -430,9 +399,7 @@ This tells us the extent to which the two vectors go in the same direction.
 
 > dot product of a vector is a scalar quantity describing only the magnitude of a particular vector
 
-<img src="../images/linear_algebra/dotproduct3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct3.png | width=400)<br>
 
 If the vectors are 90 degrees from one another
 - they're orothognal
@@ -470,13 +437,9 @@ toa -> Tangent = Opposite / Adjacent
 
 Here, the hypotenuse is the size of $s$
 
-<img src="../images/linear_algebra/projection.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection.png | width=200)<br>
 
-<img src="../images/linear_algebra/projection3.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection3.png | width=200)<br>
 
 Remember that the scalar projection is the size of the green vector.
 
@@ -494,9 +457,7 @@ The projection of $s$ onto $r$ is not the same as $r$ onto $s$ - the light will 
 
 The dot product gives us the projection multiplied by the size of r $\lVert r \rVert$
 
-<img src="../images/linear_algebra/projection2.png" width="300">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection2.png | width=200)<br>
 
 We can get the adjacent size by diving the dot product by mod r
 
@@ -559,9 +520,7 @@ In a 2D plane we can describe all points with different combinations of our two 
 
 The "span" of $\hat{e_1}$ and $\hat{e_2}$ is the set of all their linear combinations; $a\hat{e_1} + b\hat{e_2}$
 
-<img src="../images/linear_algebra/r_intermsofe.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/r_intermsofe.png | width=400)<br>
 
 $r$ exists independently of the basis vectors. It takes us from an origin to another point, but we use the coordinate system to describe $r$.
 
@@ -579,9 +538,7 @@ Using the example below;
 
 $$b_1.b_2 = (2*-2) + (1*4) = 0$$
 
-<img src="../images/linear_algebra/axistransformation1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/axistransformation1.png | width=400)<br>
 
 You can project $r$ down onto $b_2$ and calculate the vector projection. This will tell you "how much of that axis ($b_2$) you need". You then do the same for $b_1$
 
