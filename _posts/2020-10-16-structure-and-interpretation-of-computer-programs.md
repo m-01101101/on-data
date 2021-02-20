@@ -4,6 +4,7 @@ layout: post
 description: Introductory notes & quotes from the foreward of SICP
 categories: [markdown]
 title: Introducing Structure and Interpretation of Computer Programs
+hide: True
 ---
 
 # Structure and interpretation of Computer Programs
