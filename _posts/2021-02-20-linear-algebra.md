@@ -59,7 +59,7 @@ You're adding the $x$ and $y$ components together.
 
 $r + s = [r_x + s_x, r_y + s_y]$
 
-![]({{ site.baseurl }}/images/linear_algebra/addingvectors.jpg){:height="300px"}
+![]({{ site.baseurl }}/images/linear_algebra/addingvectors.jpg){:width="300px"}
 <br>
 
 In the example above $r = \begin{bmatrix} 1 \\ 2\end{bmatrix}$, $s = \begin{bmatrix} 3 \\ -1\end{bmatrix}$ we can arrive at $t$ geometrically, taking 1 step the right, 2 up, then 3 to the right, and one down.
@@ -69,7 +69,7 @@ We add the component parts (component wise), as add the $x$ coordinates and the 
 1. Multiplication by a scalar (i.e. number, because numbers scale vectors, so we use the terms interchangeably)
    <br>_negative numbers means reverse_
 
-![]({{ site.baseurl }}/images/linear_algebra/vector_multiplication.jpg){:height="250px"}
+![]({{ site.baseurl }}/images/linear_algebra/vector_multiplication.jpg){:width="250px"}
 <br>
 
 We multiple each component in the vector by that scalar.
@@ -93,7 +93,7 @@ One way of doing so is to calculate the "residuals", which is the difference bet
 
 A better fit would have as much overlap as it can, reducing the residuals as much as possible.
 
-![]({{ site.baseurl }}/images/linear_algebra/residuals.png){:height="400px"}
+![]({{ site.baseurl }}/images/linear_algebra/residuals.png){:width="400px"}
 
 
 In the example above, we'd improve the model in orange by decreasing or increasing $\mu$ (the height) and keeping $\sigma$ (the width) roughly the same.
@@ -111,7 +111,7 @@ p = [μ, σ]
 histogram(p)
 ```
 
-![]({{ site.baseurl }}/images/linear_algebra/testing_rss.png){:height="400px"}
+![]({{ site.baseurl }}/images/linear_algebra/testing_rss.png){:width="400px"}
 
 ```python
 μ = 179 ; σ = 7
@@ -119,17 +119,17 @@ p = [μ, σ]
 histogram(p)
 ```
 
-![]({{ site.baseurl }}/images/linear_algebra/testing_rss1.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/testing_rss1.png){:width="400px"}
 
 Since each parameter vector $\mathbf{p}$ represents a different bell curve, each with its own value for the sum of squared residuals, $\mathrm{SSR}$, we can draw the surface of $\mathrm{SSR}$ values over the space spanned by $\mathbf{p}$, such as $\mu$ and $\sigma$ in this example.
 
 Every point on this surface represents the SSR of a choice of parameters
 
-![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours.png){:width="400px"}
 
 We can take a ‘top-down’ view of the surface, and view it as a contour map, where each of the contours (in green here) represent a constant value for the $\mathrm{SSR}$.
 
-![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours1.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/residuals_as_contours1.png){:width="400px"}
 
 Often we can't see the whole parameter space, so instead of just picking the lowest point, we have to make educated guesses where better points will be.
 
@@ -143,7 +143,7 @@ For example, a model with parameters $\mathbf{p}'$ = $\mathbf{p}$ + $\Delta\math
 
 The $\Delta\mathbf{p}$ $\begin{bmatrix}-2 \\ 2\end{bmatrix}$ will give the best improvement in the model below;
 
-![]({{ site.baseurl }}/images/linear_algebra/moving_contours.png){:height="400px"}
+![]({{ site.baseurl }}/images/linear_algebra/moving_contours.png){:width="400px"}
 
 $\mu$ and $\sigma$ have to be different, decrease $\mu$ along the x-axis, increase $\sigma$ along the y-axis.
 
@@ -204,7 +204,7 @@ Vector addition is _associative_ we can do it component by component.
 
 In the image below $\hat{i}$ and $\hat{j}$ are our _basis vectors_, things that define the space. Vector addition can be thought of as combining two scaled vectors of $\hat{i}$ and $\hat{j}$
 
-![]({{ site.baseurl }}/images/linear_algebra/vector_addition.jpg){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_addition.jpg){:width="400px"}
 
 Mulitplication on vectors; $2r$ is 2 * the components of $r$
 
@@ -214,7 +214,7 @@ $$2r = \begin{bmatrix}2*3 \\ 2*2\end{bmatrix} = \begin{bmatrix}6 \\ 4\end{bmatri
 
 Vector subtraction; minus $r$ is not a shorter vector, that would be 0.5, rather it is in the oppositie direction. (Addition of negative one multiple the vector, ie vector + $(s * -1)$ -> this is a very handy way to think of subtraction)
 
-![]({{ site.baseurl }}/images/linear_algebra/vector_operations.jpg){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_operations.jpg){:width="400px"}
 
 __Thinking of vectors as representing attributes of objects__
 
@@ -224,13 +224,13 @@ Vecotrs can represent information about an object. In this example, each vector 
 
 Our vector operations still apply to these house objects, we can do operations on multiple houses, adding and multiplying (and introducing the concept of a negative house if there's such a thing)
 
-![]({{ site.baseurl }}/images/linear_algebra/vectors_as_attributes.jpg){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/vectors_as_attributes.jpg){:width="400px"}
 
 __Doing operations with vectors__
 
 We have the following vectors;
 
-![]({{ site.baseurl }}/images/linear_algebra/doingvectoroperations.jpg){:height="400px"}
+![]({{ site.baseurl }}/images/linear_algebra/doingvectoroperations.png){:width="400px"}
 
 $a$ = $\begin{bmatrix}2 \\ 2\end{bmatrix}$ 
 $-b$ = $\begin{bmatrix}-1 \\ 2\end{bmatrix}$ 
@@ -249,11 +249,11 @@ Addition and scaling by a number are two main vector operations and allow us def
 
 We can define a vector, say $r$, without any reference to any coordinate system. We can treat it as a geometric object, with just two properties, it's length (size) and its direction.
 
-![]({{ site.baseurl }}/images/linear_algebra/vector_r.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/vector_r.png){:width="200px"}
 
 If we wanted to calculated the size, or the length of $r$, we could use a coordinate system with two axis that are orthogonal to each other.
 
-![]({{ site.baseurl }}/images/linear_algebra/i_j_axis.png){:height="200px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/i_j_axis.png){:width="200px"}
 
 $r = ai + bj$ -> a number of i, and b number of j
 
@@ -269,7 +269,7 @@ The size of a vector with two components is calculated using Pythagoras' theorem
 
 $\lVert r \rVert = \sqrt{a^2 + b^2}$
 
-![]({{ site.baseurl }}/images/linear_algebra/denoting_r_2d.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/denoting_r_2d.png){:width="400px"}
 
 __We define the size of a vector through the sums of the squares of its components__
 
@@ -305,7 +305,7 @@ Any one side of a triangle has to be less than the sum of the other two sides.
 
 Say we have two vectors, $r$ and $s$, $r$ has the components $ri$ and $rj$, $s$ has the components $si$ and $sj$
 
-![]({{ site.baseurl }}/images/linear_algebra/r_and_s.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/r_and_s.png){:width="300px"}
 
 We define $r . s$ (the dot product) as multiplying the $i$ components and the $j$ components and then summing them.
 
@@ -313,7 +313,7 @@ $r.s = ri * si + rj * sj$
 
 Another way of saying this is; the dot product of two vectors is the sum of their componentwise products;
 
-![]({{ site.baseurl }}/images/linear_algebra/dotproduct2.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct2.png){:width="400px"}
 
 ```python
 def dot(v: Vector, w: Vector) -> float:
@@ -327,7 +327,7 @@ assert dot([1, 2, 3], [4, 5, 6]) == 32 # 1 * 4 + 2 * 5 + 3 * 6
 
 It's the length of the vector you'd get if you projected v onto w.
 
-![]({{ site.baseurl }}/images/linear_algebra/dotproduct1.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct1.png){:width="400px"}
 
 The dot product is therefore a scalar number not a vector. However, we get the vector of the dotted line above by multiplying $w$ by the dot product.
 
@@ -372,11 +372,11 @@ Theta being the angle between a and b
 
 The cosine rule, when combined with the dot product can tell us __the degree to which the two vectors are pointing in the same direction__.
 
-![]({{ site.baseurl }}/images/linear_algebra/cosine_rule.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/cosine_rule.png){:width="300px"}
 
 First, translate out the cosine rule using vector notation;
 
-![]({{ site.baseurl }}/images/linear_algebra/cosine_as_vector.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/cosine_as_vector.png){:width="300px"}
 
 We know that $\lVert r-s \rVert^2$ is equal to $(r-s).(r-s)$
 
@@ -399,7 +399,7 @@ This tells us the extent to which the two vectors go in the same direction.
 
 > dot product of a vector is a scalar quantity describing only the magnitude of a particular vector
 
-![]({{ site.baseurl }}/images/linear_algebra/dotproduct3.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/dotproduct3.png){:width="400px"}
 
 If the vectors are 90 degrees from one another
 - they're orothognal
@@ -437,9 +437,9 @@ toa -> Tangent = Opposite / Adjacent
 
 Here, the hypotenuse is the size of $s$
 
-![]({{ site.baseurl }}/images/linear_algebra/projection.png){:height="200px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection.png){:width="200px"}
 
-![]({{ site.baseurl }}/images/linear_algebra/projection3.png){:height="200px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection3.png){:width="200px"}
 
 Remember that the scalar projection is the size of the green vector.
 
@@ -457,7 +457,7 @@ The projection of $s$ onto $r$ is not the same as $r$ onto $s$ - the light will 
 
 The dot product gives us the projection multiplied by the size of r $\lVert r \rVert$
 
-![]({{ site.baseurl }}/images/linear_algebra/projection2.png){:height="200px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection2.png){:width="200px"}
 
 We can get the adjacent size by diving the dot product by mod r
 
@@ -520,7 +520,7 @@ In a 2D plane we can describe all points with different combinations of our two 
 
 The "span" of $\hat{e_1}$ and $\hat{e_2}$ is the set of all their linear combinations; $a\hat{e_1} + b\hat{e_2}$
 
-![]({{ site.baseurl }}/images/linear_algebra/r_intermsofe.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/r_intermsofe.png){:width="400px"}
 
 $r$ exists independently of the basis vectors. It takes us from an origin to another point, but we use the coordinate system to describe $r$.
 
@@ -538,7 +538,7 @@ Using the example below;
 
 $$b_1.b_2 = (2*-2) + (1*4) = 0$$
 
-![]({{ site.baseurl }}/images/linear_algebra/axistransformation1.png){:height="400px"}<br>
+![]({{ site.baseurl }}/images/linear_algebra/axistransformation1.png){:width="400px"}
 
 You can project $r$ down onto $b_2$ and calculate the vector projection. This will tell you "how much of that axis ($b_2$) you need". You then do the same for $b_1$
 
@@ -632,9 +632,7 @@ ie: $b_3 = a_1 b_1 + a_2 b_2$
 
 Formula required to show linear independence;
 
-<img src="../images/linear_algebra/basis_linearindependence.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/basis_linearindependence.png){:width="400px"}
 
 Linearly __dependent__;
 
@@ -646,9 +644,7 @@ $a = \frac{1}{2}b$
 
 Similarly, $\mathbf{a} = q_1\mathbf{b} + q_2\mathbf{c}$
 
-<img src="../images/linear_algebra/basis_linearindependence2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/basis_linearindependence2.png){:width="400px"}
 
 Find $q_1, q_2$
 
@@ -687,9 +683,8 @@ Therefore, any mapping we do from one set of basis vectors, from one coordinate 
 
 It doesn't warp or fold space which is what the linear bit in linear algebra means. Things might be stretched or rotated or inverted, but everything remains evenly spaced and linear combinations still work.
 
-<img src="../images/linear_algebra/axistransformation2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/axistransformation2.png){:width="400px"}
+
 
 ### Applications of changing basis
 
@@ -701,9 +696,7 @@ We use the dot-product to do the projection to map the data from the x-y space o
 
 There's some theoretical disputes, whether the distance should be measured straight (y-axis) or orthognally (the angle).
 
-<img src="../images/linear_algebra/applicationofchangbasis.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/applicationofchangbasis.png){:width="400px"}
 
 In a neural network for face recognition, the goal of the learning process is going to be to somehow derive a set of basis vectors that extract the most information-rich features of the faces.
 
@@ -735,9 +728,7 @@ This is the scalar projection of the velocity of the ball onto the velocity of t
 
 If you were to draw a straight line from the co-ordinate of the ball onto the vector of the wind, what is the size of that vector in terms of the wind vector.
 
-<img src="../images/linear_algebra/projection3.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/projection3.png){:width="200px"}
 
 Remember that the scalar projection is the size of the green vector.
 
@@ -836,15 +827,13 @@ We can think of every corresponding input vector within a space, moving to its c
 
 Think of vectors as points (i.e. where the arrow points) and think of that point moving to some other point.
 
-<img src="../images/linear_algebra/lineartransformations1.png" width="450">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/lineartransformations1.png){:width="400"}
 
 We have the ability to move around all the points in space. Though the types of transformations are limited to `linear` transformations.
 
 Visually, what this means is that all lines in our original coordinate system must remain lines, and our origin remains fixed.
 
-<img src="../images/linear_algebra/lineartransformations2.png" width="450">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/lineartransformations2.png){:width="400"}
 
 It's not just the vertical and horizontal lines that must remain lines, but all angles, so diagonals as well. Grid lines remain parallel and evenly spaces.
 
@@ -862,12 +851,11 @@ transformed $v$ = -1(transformed $\hat{i}$) + 2(transformed $\hat{j}$)
 
 In a 2 dimensional matrix, we need just four numbers to know where any vector will now land. The coordinates for $\hat{i}$ and $\hat{j}$.
 
-<img src="../images/linear_algebra/lineartransformations3.png" width="400">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/lineartransformations3.png){:width="400"}
 
 Any vector can then be translated from the old basis vectors to the new transformation.
 
-<img src="../images/linear_algebra/lineartransformations4.png" width="400">
+![]({{ site.baseurl }}/images/linear_algebra/lineartransformations4.png){:width="400"}
 
 `in matrix multiplication, remember; rows times cols`
 
@@ -900,9 +888,7 @@ $$\begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$$
 
 Would expand our basis vectors by 3x and 2y.
 
-<img src="../images/linear_algebra/matrix_transformation1.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation1.png){:width="200"}
 
  A fraction would shrink space.
 
@@ -910,9 +896,7 @@ Would expand our basis vectors by 3x and 2y.
 
 $$\begin{pmatrix} -1 & 0 \\ 0 & 2 \end{pmatrix}$$
 
-<img src="../images/linear_algebra/matrix_transformation2.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation2.png){:width="200"}
 
 Two negatives will invert everything. Inversion.
 
@@ -920,9 +904,7 @@ You can have a matrix that is akin to having a mirror, where it shifts both axse
 
 $$\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
-<img src="../images/linear_algebra/matrix_transformation3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation3.png){:width="400"}
 
 The following matrix acts as a vertical mirror plane $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$
 
@@ -938,17 +920,13 @@ $\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ to $\begin{bmatrix} 1 & 1 \\ 0 & 
 
 Creates a parallelogram;
 
-<img src="../images/linear_algebra/matrix_transformation4.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation4.png){:width="400"}
 
 A 90 degree anticlockwise rotation will look like;
 
 $\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ to $\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$
 
-<img src="../images/linear_algebra/matrix_transformation5.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation5.png){:width="400"}
 
 A general expression for a rotation in 2d can be written as;
 
@@ -966,9 +944,7 @@ The composition can be described by its own matrix.
 
 Like function notation, we read from inside out $f(g(x))$
 
-<img src="../images/linear_algebra/composition1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/composition1.png){:width="400"}
 
 You can see why we do `rows times cols`. 
 
@@ -978,9 +954,7 @@ You can see why we do `rows times cols`.
 
 The image below gives us the first column of our composition.
 
-<img src="../images/linear_algebra/composition2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/composition2.png){:width="400"}
 
 The intuition is to think of applying one matrix transformation after another. This is why the order in which the transformations are applied matters. To rotate and then shear has a different effect than if you shear and then rotate.
 
@@ -1024,15 +998,11 @@ Matrices make transformations on vectors, potentially changing their magnitude a
 
 If we have two unit vectors (in orange) and another vector, $r = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$ (in pink), before any transformations - these look like this:
 
-<img src="../images/linear_algebra/matrix_transformation6.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation6.png){:width="200"}
 
 The matrix, $A = \begin{pmatrix} 1/2 & -1 \\ 0 & 3/4 \end{pmatrix}$ will transform them;
 
-<img src="../images/linear_algebra/matrix_transformation7.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation7.png){:width="200"}
 
 __Q1__
 
@@ -1073,8 +1043,7 @@ bottom right 0.5
 
 Best corresponds to;
 
-<img src="../images/linear_algebra/matrix_transformation8.png" width="200">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation8.png){:width="200"}
 
 __Q4__
 
@@ -1106,7 +1075,7 @@ $$ \begin{pmatrix} 2 & 3 \\ 10 & 1 \end{pmatrix} \begin{bmatrix} a \\ b \end{bma
 
 $A^{-1}$, the inverse of $A$ does exact opposite of what $A$ does.
 
-By multiplying $A$ by $A^{-1}$, we reverse whateever $A$ does and we get the identity matrix $I$, the matrix that does nothing. 
+By multiplying $A$ by $A^{-1}$, we reverse whatever $A$ does and we get the identity matrix $I$, the matrix that does nothing.
 
 $Ar = s$ becomes $A^{-1} Ar = A^{-1} s$
 
@@ -1116,7 +1085,7 @@ $r = A^{-1} s$
 
 ### Linear algebra to solve systems of equations
 
-All of sudden we've moved away from planning with geomgetry and vector spaces and back to linear equations.
+All of sudden we've moved away from planning with geometry and vector spaces and back to linear equations.
 
 Systems of equations are a list of variables (things you don't know) and a list of equations relating to them.
 
@@ -1127,7 +1096,7 @@ The following system of equations;
 $$4x_1 = 5x_2 = - 13$$
 $$-2x_1 + 3x_2 = 9$$
 
-In matrix notiation, we can write the system more compactly;
+In matrix notation, we can write the system more compactly;
 
 $Ax = b$ with;
 
@@ -1137,8 +1106,7 @@ If the equations can be solved using linear algebra then (1) the variable in eac
 
 Arranging our systems of equations like this, sheds some geometric light on the problem;
 
-<img src="../images/linear_algebra/systemsofequations1.png" width="400">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/systemsofequations1.png){:width="400"}
 
 We're looking for a vector $\bf{x}$, that after applying the transformation $A$, lands on $\bf{v}$
 
@@ -1148,29 +1116,25 @@ If $A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}, A^{-1} = \begin{bmatrix} 
 
 If you first apply $A$, then $A^{-1}$ you end up where you started.
 
-<img src="../images/linear_algebra/systemsofequations2.png" width="200">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/systemsofequations3.png){:width="200"}
 
-$A^{-1}A$ gets you back to where you started; multiplied out it gives you the identity matrix, the equivilent of multiplying by 1 in matrix multiplication.
+$A^{-1}A$ gets you back to where you started; multiplied out it gives you the identity matrix, the equivalent of multiplying by 1 in matrix multiplication.
 
 Therefore;
 
-<img src="../images/linear_algebra/systemsofequations3.png" width="200">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/systemsofequations3.png){:width="400"}
 
 If the determinant of $A$ is zero, it has manipulated space into a lower dimension, as a result we cannot use it's inverse to understand what matrix was applied onto $\bf{x}$ to produce $\bf{v}$.
 
 The equation can be solved, but only with the vector $\bf{v}$ lives on the new dimension (in the case of 3D to 2D, the vector must live on that line).
 
-<img src="../images/linear_algebra/systemsofequations4.png" width="300">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/systemsofequations4.png){:width="300"}
 
-When the output of a transformation is a line, i.e. it's one-dimensional, we say the transformation has a rank of 1. If all vectors land on a two-dimensional place, the tranksformation has a rank of 2, and so on.
+When the output of a transformation is a line, i.e. it's one-dimensional, we say the transformation has a rank of 1. If all vectors land on a two-dimensional place, the transformation has a rank of 2, and so on.
 
 The set of outputs for the transformation matrix is called the _column space_. The columns tell you where your vectors land, and the span of the columns gives you all possible outputs.
 
-<img src="../images/linear_algebra/systemsofequations5.png" width="300">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/systemsofequations5.png){:width="300"}
 
 The rank is the number of dimensions in the column space. If a rank mantains it's number of dimensions, then it is regarded as "_full rank_".
 
@@ -1216,21 +1180,21 @@ $$ A = \begin{pmatrix} 1 & 1 & 3 \\ 1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} B = \be
 
 The identity matrix is $I = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$
 
-You could perform back substition, by taking each column in the inverse matrix and use the output of the identity matrix.
+You could perform back substitution, by taking each column in the inverse matrix and use the output of the identity matrix.
 
 $$ \begin{pmatrix} 1 & 1 & 3 \\ 1 & 2 & 4 \\ 1 & 1 & 2 \end{pmatrix} * \begin{pmatrix} b_{11}\\ b_{21}\\ b_{31} \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$$
 
-However, we can use elimation to do it more efficiently.
+However, we can use elimination to do it more efficiently.
 
 Subtracting the first row from rows two and three.
 
 $$A* \begin{pmatrix} 1 & 1 & 3 \\ 0 & 1 & 1 \\ 0 & 0 & -1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{pmatrix}$$
 
-If we mulitply the bottom row by -1 we can get the matrix in echleon form;
+If we multiply the bottom row by -1 we can get the matrix in echelon form;
 
 $$A* \begin{pmatrix} 1 & 1 & 3 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ -1 & 1 & 0 \\ 1 & 0 & -1 \end{pmatrix}$$
 
-Then back substitute, make the third column 0 in both rows one and two. 
+Then back substitute, make the third column 0 in both rows one and two.
 
 Take the bottom row and subtract it from the second row and multiply by three and subtract from row one;
 
@@ -1269,9 +1233,8 @@ s = [15, 28, 23]
 __Q2__
 
 Given another system, $Br = t$
-<img src="../images/linear_algebra/solvinglineq_inverse1.png" width="500">
-<br>
-<br>
+
+![]({{ site.baseurl }}/images/linear_algebra/solvinglineq_inverse1.png){:width="450"}
 
 We need to time the first row by three, then minus that from the second row. This will ensure the first value of the row is 0.
 
@@ -1362,8 +1325,8 @@ s = [15, 17, 5]
 
 # Price of individual elements;
 s = [3, 7, 5]     
-
 ```
+
 __Q7__
 
 Find the inverse of the matrix you used in Question 1
@@ -1415,28 +1378,21 @@ Everything in the space has grown by a factor $ad$
 
 This is the determinant of the transformation matrix. _the determinant is how much we grow/shrink space_. More precisely, it is the factor by which a given area increases or decreases.
 
-<img src="../images/linear_algebra/determinants1.png" width="400">
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants1.png){:width="400"}
 
 A more concrete example,
 
-<img src="../images/linear_algebra/determinants5.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants5.png){:width="400"}
 
 However, these transformations are not always equal.
 
 Adding $b$ into the matrix;
 
-<img src="../images/linear_algebra/determinants2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants2.png){:width="400"}
 
 The area, the determinant, is still the same $ad$
 
-<img src="../images/linear_algebra/determinants6.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants6.png){:width="400"}
 
 To get the area of a general matrix, such as;
 
@@ -1444,9 +1400,7 @@ $$ A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
 
 The maths gets a little complex; but is $ad - bc$
 
-<img src="../images/linear_algebra/determinants3.png" width="500">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants3.png){:width="450"}
 
 This is finding the determinant of A
 
@@ -1454,9 +1408,7 @@ $\lVert a \rVert = ad - bc$
 
 If a 2D matirx transforms the space such that all points fit onto a single line or even a single point, then the determinant will be 0.
 
-<img src="../images/linear_algebra/determinants7.png" width="500">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants7.png){:width="450"}
 
 If a transformation has a determinant of 0, it is transforming the space into a smaller dimension. For a 2-dimenisonal space this is putting everything onto a single line, but the concept applies to $n$ dimensions.
 
@@ -1466,9 +1418,7 @@ __Orientation__
 
 You can scale an area by a negative amount. As we've seen with vector operations, this does not mean shrinking the area but rather reversing it's orientation. "flipping space". They "invert the orientation of space.
 
-<img src="../images/linear_algebra/determinants8.png" width="500">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants8.png){:width="450"}
 
 In a 3D space, the determinant tells us how much volume gets scaled.
 
@@ -1500,9 +1450,7 @@ $e'_1$ and $e'_2$ become multiples of one another.
 
 The matrix is transforming every point in space along a line. Therefore the determinant is going to be 0.
 
-<img src="../images/linear_algebra/determinants4.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/determinants4.png){:width="450"}
 
 If we're working in 3D space, a 3x3 matrix and one of the new basis vectors is just a linear multiple of the other two (ie not linearly independent), the new space is a plane.
 
@@ -1586,7 +1534,7 @@ def fixRowZero(A) :
         raise MatrixIsSingular()
     A[0] = A[0] / A[0,0]
     return A
-```    
+```
 
 ```python
 """First we'll set the sub-diagonal elements to zero, i.e. A[1,0].
@@ -1607,7 +1555,7 @@ def fixRowOne(A) :
         raise MatrixIsSingular()
     A[1] = A[1] / A[1,1]
     return A
-```    
+```
 
 ```python
 def fixRowTwo(A) :
@@ -1651,9 +1599,7 @@ The Einstein summation convention is a way to write matrix transformations. It w
 
 When we started, we said that multiplying a matrix by a vector or with another matrix is a process of taking every element in each row in turn, multiplied with corresponding element in each column in the other matrix, and adding them all up and putting them in place.
 
-<img src="../images/linear_algebra/einsteinconvention1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/einsteinconvention1.png){:width="400"}
 
 Einstein convention,says, you have a sum over some elements $j$, for all the possible combinations of $i$ and $k$. As this is a repeated index, don't bother with the sum;
 
@@ -1665,9 +1611,7 @@ We can multiply matrices that are not square (ie same numbers of rows in A as th
 
 As long as you have the same number of $j$s you can multiply them together.
 
-<img src="../images/linear_algebra/einsteinconvention2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/einsteinconvention2.png){:width="400"}
 
 > Now, all sorts of matrix properties that you might want, inverses and so on, determinants, all start to get messy and mucky, and you sometimes can't even compute them when you're doing this sort of thing.
 
@@ -1681,17 +1625,13 @@ The summation convention is $u_i v_i$, we repeat over all the $i$s and add.
 
 That's the same as doing a matrix transformation, where $u$ is a row and $v$ a column.
 
-<img src="../images/linear_algebra/einsteinconvention3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/einsteinconvention3.png){:width="400"}
 
 Projection is symmetric. Projection is the dot product.
 
 If you project $\hat{u}$ down onto $\hat{e_1}$ and vice versa, the two triangles split by the pink line are identical.
 
-<img src="../images/linear_algebra/einsteinconvention4.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/einsteinconvention4.png){:width="400"}
 
 > there is this connection between this numerical thing, matrix multiplication, and this geometric thing, projection
 
@@ -1806,17 +1746,13 @@ The identity matrix doesn't change the second matrix, so remains $\begin{bmatrix
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors with $n$ elements. Write the dot product;
 
-
-
-
+--TODO
 
 ### Using non-square matrices to do a projection
 
 Shadows are an example of a transformation that reduces the number of dimensions. For example, 3D objects in the world cast shadows on surfaces that are 2D.
 
-<img src="../images/linear_algebra/nonsquareprojections1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/nonsquareprojections1.png){:width="400"}
 
 The sun is sufficiently far away that effectively all of its rays come in parallel to each other. We can describe their direction with the unit vector $\hat{\mathbf{s}}$
 
@@ -1873,9 +1809,7 @@ $r' = A_{ij}r{j}$
 
 Another use of non-square matrices is applying a matrix to a list of vectors.
 
-<img src="../images/linear_algebra/nonsquare1.png" width="600">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/nonsquare1.png){:width="600"}
 
 Observe that it's the same result as treating the columns as separate vectors and calculating them individually.
 
@@ -1912,9 +1846,7 @@ The columns of a transformation matrix, are the axes of the new basis vectors of
 
 The lines in yellow describe the world of Panda Bear. To him, these vectors are [1,0] and [0,1] but in my frame, they are [3,1] and [1,1]
 
-<img src="../images/linear_algebra/matrix_basis1.png" width="500">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_basis1.png){:width="500"}
 
 Bear's transformation matrix is therefore; $\begin{bmatrix} 3&1 \\ 1&1 \end{bmatrix}$
 
@@ -1926,9 +1858,7 @@ The vector `1/2[3, 1]` or `[3/2, 1/2]` in Bear's world becomes;
 
 `[(3 * 3/2) + (1 * 1/2), (1 * 3/2) + (1 * 1/2)]` or `[5, 2]`
 
-<img src="../images/linear_algebra/matrix_basis2.png" width="500">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_basis2.png){:width="500"}
 
 However, we need to figure out how to go the other way. Translating my world to Bear's world.
 
@@ -1950,9 +1880,7 @@ Here Bear's world is going to be an orthonormal basis vector set (they form a v)
 
 _you can to a dot product to verfiy they are at 90 degrees to one another (orthogonal)_
 
-<img src="../images/linear_algebra/matrix_basis3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_basis3.png){:width="400"}
 
 Bear's transformation matrix, ie the matrix that converts a vector in Bear's world to my coordinate system;
 
@@ -1992,9 +1920,7 @@ Doing a 45 degree rotation in my world is done using the following matrix;
 
 $$\frac{1}{\sqrt2}  \begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$$
 
-<img src="../images/linear_algebra/matrix_transformation_newbasis1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation_newbasis1.png){:width="400"}
 
 However, we don't know what a 45 degree transformation looks like in Bear's world.
 
@@ -2010,12 +1936,10 @@ $B^{-1} = \frac{1}{2} \begin{bmatrix} 1&-1 \\ -1&3 \end{bmatrix}$
 
 Or written as; $B^{-1} R B = R_B$
 
-<img src="../images/linear_algebra/matrix_transformation_newbasis2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/matrix_transformation_newbasis2.png){:width="400"}
 
 > If we want to transform to normal form normal coordinate systems, then the translation matrices also change. We have to be mindful of that
-
+>
 > We've got the transformation matrix R, wrapped around by B, B is the minus 1, that does the translation from my world to the world of the new basis system.
 
 __Practice__
@@ -2045,7 +1969,8 @@ Because if is, I find $i$ and $j$ are the same; elements at the coorindates 1,1 
 
 Imagine we have a square matrix $A$, with dimensions n x n. This defines a transformation (ie we apply to vectors to transform them), the columns in this matrix are the basis vectors in a new space.
 
-In this matrix; 
+In this matrix;
+
 - the vectors are orthogonal to each other and of unit length 
     - $a_i . a_j = 0$ if $i \neq j$
     - $a_i . a_j = 1$ if $i = j$
@@ -2054,9 +1979,7 @@ If we multiply this matrix by it's transpose $A^T$, the columns $a_1$ to $a_n$ b
 
 The result of the multiplication is an identity matrix;
 
-<img src="../images/linear_algebra/orthogonal_matrices1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/orthogonal_matrices1.png){:width="400"}
 
 $A^T$ is a valid inverse of $A$
 
@@ -2073,6 +1996,7 @@ Because all the basis vectors in an orthogonal matrix are of unit length, it mus
 The determinant of an orthogonal matrix must be either plus or minus one (depending on if you do $A^T * A or A * A^T$).
 
 We want our transformation matrix to be an orthogonal matrix, we want the basis vectors to be orthonormal.
+
 - the inverse is easy to compute
 - the transformation is reversible as it doesn't collapse the space
 - the projection is the dot product
@@ -2084,9 +2008,7 @@ If we assume we already have some linearly independent vectors that span the spa
 
 We can check linear independence by calculating the determinant. If there are linearly independent the determinant will be 0.
 
-<img src="../images/linear_algebra/grahmschmidt1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/grahmschmidt1.png){:width="400"}
 
 However, these vectors are not orthogonal to one another and are not of unit length.
 
@@ -2098,15 +2020,13 @@ $e_1 = \frac{v_1}{\lVert v_1 \rVert}$
 
 $v_2$ can now be thought of as (1) a component of that's in the direction of $e_1$ plus (2) a component that is perpendicular to $e_1$, which we can find by taking the projection of $v_2$ onto $e_1$
 
-<img src="../images/linear_algebra/grahmschmidt2.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/grahmschmidt2.png){:width="250"}
 
 The vector projection is $\frac{(v_2 . e_1)}{\lVert e_1 \rVert}$ or simply ($v_2 . e_1$) as $e_1$ has already been normalised, it has size 1. To get this as a vector, not just a number we multiply by $e_1$
 
 $v_2 = (v_2 . e_1) e_1$ + $u_2$
 
-Rewritten as 
+Rewritten as;
 
 $u_2 = v_2 - (v_2 . e_1) e_1$
 
@@ -2114,13 +2034,11 @@ Then normalised to unit length
 
 $e_2 = \frac{u_2}{\lVert u_2 \rVert}$
 
-<img src="../images/linear_algebra/grahmschmidt3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/grahmschmidt3.png){:width="400"}
 
 $v_3$ is not linear combination of $v_1$ and $v_2$, therefore it is not in the plane defined by $v_1$ and $v_2$ and following that, will not be defined by $e_1$ and $e_2$.
 
-As a result, we need to project $v_3$ down onto the plane of $e_1$ and $e_2$ and thet pojection will be some vector in the plane composed of $e_1$s and $e_2$s
+As a result, we need to project $v_3$ down onto the plane of $e_1$ and $e_2$ and the projection will be some vector in the plane composed of $e_1$s and $e_2$s
 
 The perpendicular vector $u_3$ is what is left when you remove the elements of $v_3$ made up of $e_1$ and $e_2$
 
@@ -2233,9 +2151,7 @@ We have three vectors, the first two are within the plane of the mirror, the thi
 
 $$v_1 = \begin{bmatrix} 1\\1\\1\end{bmatrix} v_2 = \begin{bmatrix} 2\\0\\1\end{bmatrix} v_3 = \begin{bmatrix} 3\\1\\-1\end{bmatrix}$$
 
-<img src="../images/linear_algebra/reflecting.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/reflecting.png){:width="200"}
 
 Using the Grahm-Schimdt procedure to get some orthonormal basis vectors that desrribe the plane and its normal $v_3$
 
@@ -2275,9 +2191,7 @@ This contains the plane ($e_1$ and $e_2$ and then the normal to the plane $e_3$.
 
 Say we have some vector $r$ that we want to reflect down through the pane, and get $r'$ on the other side;
 
-<img src="../images/linear_algebra/reflecting2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/reflecting2.png){:width="400"}
 
 We can think of $r$ as composed of some vector within the pane (composed of $e_1$s and $e_2$s) - this the dotted line perpendicular to $e_1$ and $e_2$ and some vector that is normal (ie made up of $e_3$s) - this is the dotted line up to $r$
 
@@ -2293,17 +2207,13 @@ Getting from $r$ to $r'$ is hard. As we saw with Bear.
 
 _Note_ in this example we're changing from our basis vectors to the plane's and then translating back into our basis. So the $E$ and the $E^{-1}$ are flipped compared to when we were working with Bear.
 
-<img src="../images/linear_algebra/reflecting3.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/reflecting3.png){:width="250"}
 
 $E T_E E^{-1}r = r'$
 
 Written out the whole thing looks a little ungodly, but that's more down to the volume of arthimetic required than the complexity
 
-<img src="../images/linear_algebra/reflecting4.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/reflecting4.png){:width="400"}
 
 Generalised, this is the process of reflecting a point in space in a mirror (we can transform something through the looking glass). 
 
@@ -2362,9 +2272,7 @@ We've seen that we can express linear transformations using matrices. These tran
 
 > A transformation in which all points along a given line L remain fixed while other points are shifted parallel to L by a distance proportional to their perpendicular distance from L. Shearing a plane figure does not change its area. The shear can also be generalized to three dimensions, in which planes are translated instead of lines. - Wolfram
 
-<img src="../images/linear_algebra/shear1.gif" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/shear1.gif){:width="250"}
 
 Typically, we have thought about how these transformations change a single vector. What about if the matrix was applied to all vectors in the space?
 
@@ -2372,9 +2280,7 @@ We can think of this by having a square, centred in the middle of our basis vect
 
 Applying a scaling of 2 in the vertical direction, the square becomes a rectangle. Applying a horizontal sheer gives us a parrallelegram.
 
-<img src="../images/linear_algebra/eigen1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen1.png){:width="400"}
 
 The square helps us to understand what is happening to many vectors. However, some vectors remain on the same line they started on, while others do not.
 
@@ -2383,9 +2289,7 @@ Take our initial square, with three vectors drawn on;
 If we scale vertically, the diagonal vector will __not__ be pointing in the same direction.
 Any other vector's direction would have changed (apart from the horizontal and vertical, their angle and size will have changed)
 
-<img src="../images/linear_algebra/eigen2.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen2.png){:width="250"}
 
 The horizontal and vertical vectors are charactersitic of this particular trnasformation. They are the only ones that do not change. They are referred to as eigenvectors.
 
@@ -2395,23 +2299,17 @@ Eigenvectors are those laying on the same span as before the transformation. The
 
 Take a pure shear (where there is no rotation or scaling so the area is unchanged), here we would have one eigenvector, along the horiztonal;
 
-<img src="../images/linear_algebra/eigen3.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen3.png){:width="250"}
 
 In rotation, there are no eigenvectors.
 
-<img src="../images/linear_algebra/eigen4.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen4.png){:width="250"}
 
 __Practice__
 
 In all examples, we'll start with the following vectors and apply a transformation $T$ 
 
-<img src="../images/linear_algebra/eigen5.png" width="250">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen5.png){:width="250"}
 
 $T_1= \begin{bmatrix} 2&0\\0&2 \end{bmatrix}$
 
@@ -2441,9 +2339,7 @@ $T_6= \begin{bmatrix} 2&1\\0&2 \end{bmatrix}$
 
 $T_6$ scales all vectors by 2, but alters the angle at which the orange and purple vectors are pointing
 
-<img src="../images/linear_algebra/eigen6.png" width="700">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen6.png){:width="650"}
 
 To summaise, eigenvectors are those that lay along the same path after applying a linear transformation to a space. Eigenvalues are the amount that each of those vectors has been stretched in the process (or negative if flipped).
 
@@ -2452,17 +2348,13 @@ In the practice examples, it appeared that rotation would leave us without any e
 A transformation that is some combination of horizontal shearing and vertical scaling does have two eigenvectors.
 The first which is most obvious is the horiztonal vector. The second is between the organge and the pink vector. Though the concept is straight forward, there are not always easy to spot.
 
-<img src="../images/linear_algebra/eigen7.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen7.png){:width="400"}
 
 This problem is amplified in three or more dimensions, where we can't simply use geometric representations to spot eigenvectors.
 
 In 3D scaling and shearing work much the same way, but rotation works differently. The eigenvector represents the axis of rotation.
 
-<img src="../images/linear_algebra/eigen8.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigen8.png){:width="400"}
 
 ### Eigenvectors, a formal definition
 
@@ -2572,7 +2464,6 @@ $A \times \begin{bmatrix} 2\\1 \end{bmatrix} = \begin{bmatrix} 10\\5 \end{bmatri
 
 $A \times \begin{bmatrix} -1\\-\frac{1}{2} \end{bmatrix} = \begin{bmatrix} -5\\-2.5 \end{bmatrix}$ equivalent to scaling by 5
 
-
 __Q3__
 
 $A = \begin{pmatrix} 1&0\\-1&4 \end{pmatrix}$, what is the characteristic polynomial, and the solutions to the characteristic polynomial?
@@ -2633,9 +2524,7 @@ There will be times when we want to apply the same matrix transformation multipl
 
 We start at $v_0$, then apply $T$ to get to $v_1$, then apply $T$ again, to get to $v_2$
 
-<img src="../images/linear_algebra/eigenbasis1.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigenbasis1.png){:width="400"}
 
 $v_2$ is equivalent to applying $T$ to $v_1$ or applying $T$ to $v_0$ twice
 
@@ -2681,9 +2570,7 @@ $T^n = CDDC^{-1} = CD^nC^{-1}$
 
 We now have a method which lets us apply a transformation matrix as many times as we'd like without paying a large computational cost. 
 
-<img src="../images/linear_algebra/eigenbasis2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/eigenbasis2.png){:width="400"}
 
 ### Eigenbasis example
 
@@ -2930,15 +2817,13 @@ _TODO return and do properly with eigenvectors_
 
 The central assumption underpinning page rank is that the importance of a website is related to its links to and from other websites.
 
-We're trying to build an expression that tells us, based on this network structure, which of these webpages is most relevant to the person who made the search. 
+We're trying to build an expression that tells us, based on this network structure, which of these webpages is most relevant to the person who made the search.
 
-<img src="../images/linear_algebra/pagerank1.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/pagerank1.png){:width="200"}
 
 By mapping all the possible links, we can build a model to estimate the amount of time we would expect Procrastinating Pat to spend on each webpage.
 
-We can describe the links present on page A as a vector, where each row is either a one or a zero based on whether there is a link to the corresponding page. And then normalise the vector by the total number of the links, such that they can be used to describe a probability for that page. 
+We can describe the links present on page A as a vector, where each row is either a one or a zero based on whether there is a link to the corresponding page. And then normalise the vector by the total number of the links, such that they can be used to describe a probability for that page.
 
 $A = \begin{bmatrix}0,&1,&1,&1\end{bmatrix}$ $A$ has a link to each of $B$, $C$, and $D$ but not itsself.
 
@@ -2995,9 +2880,9 @@ $r$ ban be thought of as an eigenvector of $L$ with an eigenvalue of 1
 We can't use the diagonal method, as it requires us knowing all the eigenvectors, which is what we're trying to calculate.
 
 > Although there are many approaches for efficiently calculating eigenvectors that have been developed over the years, repeatedly multiplying a randomly selected initial guest vector by a matrix, which is called _the power method_, is still very effective
-
+>
 > The power method gives you one eigenvector, even though there will be _n_ for an _n_ webpage system, because of how we've structured our link matrix $L$, it will always give you an eigenvector with a value of 1 -> this will be the largest eigenvalue
-
+>
 > In an example with lots of web pages, most pages won't link to one another, there will be lots of 0s in _L_, this is referred to as a sparse matrix, allowing us to perform very efficient multiplication.
 
 The __damping factor__ $d$ adds an additional form to our iterative formula;
@@ -3015,9 +2900,7 @@ The PageRank algorithm is based on an ideal random web surfer who, when reaching
 __PageRank as a linear algebra problem__
 Let's imagine a micro-internet, with just 6 websites (**A**vocado, **B**ullseye, **C**atBabel, **D**romeda, **e**Tings, and **F**aceSpace). Each website links to some of the others, and this forms a network as shown,
 
-<img src="../images/linear_algebra/pagerank2.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/pagerank2.png){:width="400"}
 
 Imagine we have 100 *Procrastinating Pat*s on our micro-internet, each viewing a single website at a time.
 Each minute the Pats follow a link on their website to another site on the micro-internet.
@@ -3083,7 +2966,6 @@ array([16., 5.333, 40, 25.333, 0, 13.333])
 
 the PageRank of this micro-internet is: **C**atBabel, **D**romeda, **A**vocado, **F**aceSpace, **B**ullseye, **e**Tings
 
-
 Since we only care about the principal eigenvector (the one with the largest eigenvalue, which will be 1 in this case), we can use the power iteration method which will scale better, and is faster for large systems.
 
 Let's now try to get the same result using the Power-Iteration method.
@@ -3136,9 +3018,7 @@ __Damping Parameter__
 
 Say a new website is added to the micro-internet: *Geoff's* Website.
 
-<img src="../images/linear_algebra/pagerank3.png" width="400">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/pagerank3.png){:width="400"}
 
 ```python
 L2 = np.array([[0,   1/2, 1/3, 0, 0,   0, 0 ],
@@ -3243,9 +3123,7 @@ In PageRank, we care about the eigenvector of the link matrix, $L$, that has eig
 
 PageRank can sometimes get into trouble if closed-loop structures appear. A simplified example might look like this,
 
-<img src="../images/linear_algebra/pagerank4.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/pagerank4.png){:width="200"}
 
 Therefore the $L$ matrix will look like this;
 
@@ -3279,9 +3157,7 @@ Another issue that arises, is when parts of the system are decoupled.
 
 For example;
 
-<img src="../images/linear_algebra/pagerank5.png" width="200">
-<br>
-<br>
+![]({{ site.baseurl }}/images/linear_algebra/pagerank5.png){:width="200"}
 
 With a link matrix;
 
